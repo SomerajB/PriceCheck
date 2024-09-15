@@ -40,7 +40,7 @@ jobs:
 
     # Deploy to the github-pages environment
     environment:
-      name: playwright-report
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     # Specify runner + deployment step
@@ -49,3 +49,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+        artifact_name: playwright-report
