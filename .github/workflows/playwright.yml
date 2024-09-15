@@ -56,7 +56,7 @@ jobs:
     - name: Download zipped HTML report
       uses: actions/download-artifact@v4
       with:
-        name: playwright_report
+        name: playwright-report
         path: .
 
     - name: Push HTML Report
