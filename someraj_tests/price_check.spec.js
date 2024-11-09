@@ -39,3 +39,16 @@ test('check price change for iphone 16 in OfficeWorks', async ({ page }) => {
   const price = present_price.split('$')[1]
   expect (Number(price)).toEqual(1397)
 });
+
+test('check price change for Galaxy S24 in JB-HiFi', async ({ page }) => {
+  await page.goto('https://www.jbhifi.com.au/products/samsung-galaxy-s24-5g-256gb-onyx-black-1');
+  const present_price = await page.locator('#pdp-price-cta span').last().textContent()
+  expect (Number(present_price)).toEqual(1387)
+});
+
+test('check price change for Galaxt S24 in OfficeWorks', async ({ page }) => {
+  await page.goto('https://www.officeworks.com.au/shop/officeworks/p/samsung-galaxy-s24-8gb-256gb-black-sas24256bk');
+  const present_price = await page.locator('span[data-ref$="product-price-isNotRR"] span').innerHTML()
+  const price = present_price.split('$')[1]
+  expect (Number(price)).toEqual(1387)
+});
