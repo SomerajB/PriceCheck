@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to MP4 Converter</title>
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.7/dist/umd/ffmpeg.js"></script>
+    <script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/umd/index.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .upload-area {
+            border: 3px dashed #cbd5e0;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .upload-area:hover {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.05);
+            transform: translateY(-2px);
+        }
+        
+        .upload-area.dragover {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+            transform: scale(1.02);
+        }
+        
+        .upload-icon {
+            font-size: 3em;
+            color: #a0aec0;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        .controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+        
+        input[type="range"], select {
+            padding: 10px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        input[type="range"]:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .range-value {
+            text-align: center;
+            font-weight: bold;
+            color: #667eea;
+            margin-top: 5px;
+        }
+        
+        .convert-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .convert-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .convert-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .progress-container {
+            background: #f7fafc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            display: none;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .file-info {
+            background: #f0f7ff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .download-area {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .download-btn {
+            background: #48bb78;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background: #38a169;
+            transform: translateY(-2px);
+        }
+        
+        .log {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            max-height: 200px;
+            overflow-y: auto;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 600px) {
+            .controls {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Video to MP4 Converter</h1>
+        
+        <div class="upload-area" id="uploadArea">
+            <span class="upload-icon">📁</span>
+            <p><strong>Click to select video file</strong> or drag and drop here</p>
+            <p>Supports: MP4, AVI, MOV, MKV, WebM, FLV, WMV, and more!</p>
+            <input type="file" id="videoFile" accept="video/*">
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="compressionLevel">Compression Level:</label>
+                <input type="range" id="compressionLevel" min="10" max="90" value="30">
+                <div class="range-value" id="compressionValue">30% reduction</div>
+            </div>
+            
+            <div class="control-group">
+                <label for="quality">Quality Preset:</label>
+                <select id="quality">
+                    <option value="ultrafast">Ultra Fast (Lower Quality)</option>
+                    <option value="fast">Fast</option>
+                    <option value="medium" selected>Medium (Balanced)</option>
+                    <option value="slow">Slow (Better Quality)</option>
+                    <option value="veryslow">Very Slow (Best Quality)</option>
+                </select>
+            </div>
+        </div>
+        
+        <button class="convert-btn" id="convertBtn" disabled>
+            Select a video file to convert
+        </button>
+        
+        <div class="progress-container" id="progressContainer">
+            <div>Processing video...</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div id="progressText">0%</div>
+        </div>
+        
+        <div id="fileInfo"></div>
+        <div id="downloadArea"></div>
+        <div id="log" class="log" style="display: none;"></div>
+    </div>
+
+    <script>
+        let ffmpeg = null;
+        let selectedFile = null;
+        const { FFmpeg } = FFmpegWASM;
+        const { fetchFile } = FFmpegUtil;
+
+        // Initialize FFmpeg
+        async function initFFmpeg() {
+            if (!ffmpeg) {
+                ffmpeg = new FFmpeg();
+                
+                ffmpeg.on('log', ({ message }) => {
+                    const logElement = document.getElementById('log');
+                    logElement.innerHTML += message + '\n';
+                    logElement.scrollTop = logElement.scrollHeight;
+                });
+                
+                await ffmpeg.load({
+                    coreURL: "https://unpkg.com/@ffmpeg/core@0.12.4/dist/umd/ffmpeg-core.js",
+                    wasmURL: "https://unpkg.com/@ffmpeg/core@0.12.4/dist/umd/ffmpeg-core.wasm",
+                });
+                
+                console.log('FFmpeg loaded successfully');
+            }
+        }
+
+        // File upload handling
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('videoFile');
+        const convertBtn = document.getElementById('convertBtn');
+        const compressionSlider = document.getElementById('compressionLevel');
+        const compressionValue = document.getElementById('compressionValue');
+
+        uploadArea.addEventListener('click', () => fileInput.click());
+        uploadArea.addEventListener('dragover', handleDragOver);
+        uploadArea.addEventListener('drop', handleDrop);
+        fileInput.addEventListener('change', handleFileSelect);
+        compressionSlider.addEventListener('input', updateCompressionDisplay);
+        convertBtn.addEventListener('click', convertVideo);
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].type.startsWith('video/')) {
+                handleFile(files[0]);
+            }
+        }
+
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        }
+
+        function handleFile(file) {
+            selectedFile = file;
+            displayFileInfo(file);
+            convertBtn.textContent = 'Convert to MP4';
+            convertBtn.disabled = false;
+        }
+
+        function displayFileInfo(file) {
+            const fileInfo = document.getElementById('fileInfo');
+            const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2);
+            
+            fileInfo.innerHTML = `
+                <div class="file-info">
+                    <h3>📄 Selected File</h3>
+                    <p><strong>Name:</strong> ${file.name}</p>
+                    <p><strong>Size:</strong> ${fileSizeMB} MB</p>
+                    <p><strong>Type:</strong> ${file.type}</p>
+                </div>
+            `;
+        }
+
+        function updateCompressionDisplay() {
+            const value = compressionSlider.value;
+            compressionValue.textContent = `${value}% reduction`;
+        }
+
+        async function convertVideo() {
+            if (!selectedFile) return;
+
+            try {
+                convertBtn.disabled = true;
+                convertBtn.textContent = 'Initializing FFmpeg...';
+                
+                // Show progress container and log
+                document.getElementById('progressContainer').style.display = 'block';
+                document.getElementById('log').style.display = 'block';
+                
+                await initFFmpeg();
+                
+                convertBtn.textContent = 'Converting...';
+                
+                // Write input file to FFmpeg virtual file system
+                const inputName = 'input.' + selectedFile.name.split('.').pop();
+                await ffmpeg.writeFile(inputName, await fetchFile(selectedFile));
+                
+                // Calculate bitrate based on compression level
+                const compressionLevel = parseInt(compressionSlider.value);
+                const quality = document.getElementById('quality').value;
+                
+                // Estimate original bitrate and reduce by compression percentage
+                const originalSizeMB = selectedFile.size / (1024 * 1024);
+                const estimatedBitrate = Math.max(100, Math.floor((originalSizeMB * 8 * (100 - compressionLevel)) / 100));
+                
+                // FFmpeg conversion arguments
+                const args = [
+                    '-i', inputName,
+                    '-c:v', 'libx264',
+                    '-preset', quality,
+                    '-b:v', `${estimatedBitrate}k`,
+                    '-c:a', 'aac',
+                    '-b:a', '128k',
+                    '-movflags', '+faststart',
+                    'output.mp4'
+                ];
+                
+                // Progress tracking
+                let progress = 0;
+                const progressFill = document.getElementById('progressFill');
+                const progressText = document.getElementById('progressText');
+                
+                const progressInterval = setInterval(() => {
+                    progress = Math.min(progress + Math.random() * 10, 95);
+                    progressFill.style.width = progress + '%';
+                    progressText.textContent = Math.floor(progress) + '%';
+                }, 500);
+                
+                // Run FFmpeg conversion
+                await ffmpeg.exec(args);
+                
+                // Complete progress
+                clearInterval(progressInterval);
+                progressFill.style.width = '100%';
+                progressText.textContent = '100%';
+                
+                // Read output file
+                const data = await ffmpeg.readFile('output.mp4');
+                const outputBlob = new Blob([data], { type: 'video/mp4' });
+                
+                // Calculate compression ratio
+                const originalSize = selectedFile.size / (1024 * 1024);
+                const compressedSize = outputBlob.size / (1024 * 1024);
+                const actualReduction = ((originalSize - compressedSize) / originalSize * 100).toFixed(1);
+                
+                // Create download link
+                const downloadUrl = URL.createObjectURL(outputBlob);
+                const downloadArea = document.getElementById('downloadArea');
+                
+                downloadArea.innerHTML = `
+                    <div class="file-info">
+                        <h3>✅ Conversion Complete!</h3>
+                        <p><strong>Original size:</strong> ${originalSize.toFixed(2)} MB</p>
+                        <p><strong>Compressed size:</strong> ${compressedSize.toFixed(2)} MB</p>
+                        <p><strong>Size reduction:</strong> ${actualReduction}%</p>
+                    </div>
+                    <a href="${downloadUrl}" download="${selectedFile.name.split('.')[0]}_compressed.mp4" class="download-btn">
+                        📥 Download MP4
+                    </a>
+                `;
+                
+                // Clean up
+                await ffmpeg.deleteFile(inputName);
+                await ffmpeg.deleteFile('output.mp4');
+                
+                convertBtn.textContent = 'Convert Another Video';
+                convertBtn.disabled = false;
+                
+            } catch (error) {
+                console.error('Conversion error:', error);
+                convertBtn.textContent = 'Error - Try Again';
+                convertBtn.disabled = false;
+                
+                document.getElementById('downloadArea').innerHTML = `
+                    <div class="file-info" style="background: #fed7d7; border-color: #e53e3e;">
+                        <h3>❌ Conversion Failed</h3>
+                        <p>Error: ${error.message}</p>
+                        <p>Please try a different file or adjust settings.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Clean up object URLs when page unloads
+        window.addEventListener('beforeunload', () => {
+            const downloadLinks = document.querySelectorAll('a[href^="blob:"]');
+            downloadLinks.forEach(link => URL.revokeObjectURL(link.href));
+        });
+    </script>
+</body>
+</html>
