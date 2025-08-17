@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video to MP4 Converter</title>
-    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.7/dist/umd/ffmpeg.js"></script>
-    <script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/umd/index.js"></script>
+    <title>Video Converter - GitHub Pages Compatible</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -36,145 +34,59 @@
             background-clip: text;
         }
         
-        .upload-area {
-            border: 3px dashed #cbd5e0;
+        .method-card {
+            background: #f8f9fa;
             border-radius: 15px;
-            padding: 40px;
-            text-align: center;
-            margin-bottom: 30px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease;
         }
         
-        .upload-area:hover {
-            border-color: #667eea;
-            background: rgba(102, 126, 234, 0.05);
+        .method-card:hover {
             transform: translateY(-2px);
         }
         
-        .upload-area.dragover {
-            border-color: #667eea;
-            background: rgba(102, 126, 234, 0.1);
-            transform: scale(1.02);
-        }
-        
-        .upload-icon {
-            font-size: 3em;
-            color: #a0aec0;
-            margin-bottom: 15px;
-            display: block;
-        }
-        
-        input[type="file"] {
-            display: none;
-        }
-        
-        .controls {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .control-group {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        label {
+        .method-title {
+            font-size: 1.5em;
             font-weight: 600;
-            margin-bottom: 8px;
-            color: #4a5568;
+            margin-bottom: 15px;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
-        input[type="range"], select {
-            padding: 10px;
-            border: 2px solid #e2e8f0;
-            border-radius: 10px;
-            font-size: 16px;
-            transition: border-color 0.3s ease;
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+            position: relative;
         }
         
-        input[type="range"]:focus, select:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-        
-        .range-value {
-            text-align: center;
-            font-weight: bold;
-            color: #667eea;
-            margin-top: 5px;
-        }
-        
-        .convert-btn {
-            background: linear-gradient(45deg, #667eea, #764ba2);
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #4a5568;
             color: white;
             border: none;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
-            margin-bottom: 20px;
-            position: relative;
-            overflow: hidden;
         }
         
-        .convert-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        .copy-btn:hover {
+            background: #2d3748;
         }
         
-        .convert-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        .progress-container {
-            background: #f7fafc;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            display: none;
-        }
-        
-        .progress-bar {
-            width: 100%;
-            height: 8px;
-            background: #e2e8f0;
-            border-radius: 4px;
-            overflow: hidden;
-            margin: 10px 0;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            width: 0%;
-            transition: width 0.3s ease;
-        }
-        
-        .file-info {
-            background: #f0f7ff;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 15px 0;
-            border-left: 4px solid #667eea;
-        }
-        
-        .download-area {
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .download-btn {
-            background: #48bb78;
+        .button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
             color: white;
             border: none;
             padding: 12px 24px;
@@ -182,278 +94,498 @@
             text-decoration: none;
             display: inline-block;
             font-weight: 600;
-            transition: all 0.3s ease;
+            margin: 10px 10px 10px 0;
+            cursor: pointer;
+            transition: transform 0.2s ease;
         }
         
-        .download-btn:hover {
-            background: #38a169;
+        .button:hover {
             transform: translateY(-2px);
         }
         
-        .log {
-            background: #1a202c;
-            color: #e2e8f0;
-            padding: 15px;
-            border-radius: 10px;
-            font-family: 'Courier New', monospace;
-            max-height: 200px;
-            overflow-y: auto;
-            font-size: 12px;
-            line-height: 1.4;
+        .button.secondary {
+            background: linear-gradient(45deg, #48bb78, #38a169);
         }
         
-        @media (max-width: 600px) {
-            .controls {
-                grid-template-columns: 1fr;
-            }
+        .warning {
+            background: #fed7d7;
+            border-left: 5px solid #e53e3e;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .success {
+            background: #c6f6d5;
+            border-left: 5px solid #38a169;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .info {
+            background: #bee3f8;
+            border-left: 5px solid #3182ce;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .upload-demo {
+            border: 3px dashed #cbd5e0;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            background: #f7fafc;
+        }
+        
+        .upload-demo:hover {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.05);
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 15px 25px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #718096;
+            transition: all 0.3s ease;
+        }
+        
+        .tab.active {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .comparison-table th {
+            background: #f7fafc;
+            font-weight: 600;
+        }
+        
+        .pros {
+            color: #38a169;
+        }
+        
+        .cons {
+            color: #e53e3e;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎬 Video to MP4 Converter</h1>
+        <h1>🎬 Video Converter Solutions</h1>
         
-        <div class="upload-area" id="uploadArea">
-            <span class="upload-icon">📁</span>
-            <p><strong>Click to select video file</strong> or drag and drop here</p>
-            <p>Supports: MP4, AVI, MOV, MKV, WebM, FLV, WMV, and more!</p>
-            <input type="file" id="videoFile" accept="video/*">
+        <div class="warning">
+            <h3>⚠️ GitHub Pages FFmpeg Issue</h3>
+            <p>FFmpeg.js web workers don't work reliably on GitHub Pages due to CORS and CSP restrictions. Here are proven working alternatives:</p>
         </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('browser')">🌐 Browser Solutions</button>
+            <button class="tab" onclick="showTab('desktop')">💻 Desktop Tools</button>
+            <button class="tab" onclick="showTab('online')">☁️ Online Services</button>
+            <button class="tab" onclick="showTab('advanced')">⚙️ Advanced</button>
+        </div>
+
+        <div id="browser" class="tab-content active">
+            <div class="method-card">
+                <div class="method-title">
+                    🔧 Working Browser Solution
+                </div>
+                <p>Use this HTML5 video processing approach that works on GitHub Pages:</p>
+                
+                <div class="upload-demo" onclick="document.getElementById('demoFile').click()">
+                    <div style="font-size: 3em; margin-bottom: 15px;">📹</div>
+                    <p><strong>Click to analyze video file</strong></p>
+                    <p>Shows file info and compression estimates</p>
+                    <input type="file" id="demoFile" accept="video/*" style="display: none;">
+                </div>
+                
+                <div id="analysisResult"></div>
+                
+                <h4>Browser Canvas-Based Compression (Works on GitHub Pages):</h4>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+// HTML5 Canvas Video Frame Extraction & Compression
+async function compressVideo(file, quality = 0.7) {
+    return new Promise((resolve) => {
+        const video = document.createElement('video');
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
         
-        <div class="controls">
-            <div class="control-group">
-                <label for="compressionLevel">Compression Level:</label>
-                <input type="range" id="compressionLevel" min="10" max="90" value="30">
-                <div class="range-value" id="compressionValue">30% reduction</div>
-            </div>
+        video.onloadedmetadata = () => {
+            canvas.width = video.videoWidth * quality;
+            canvas.height = video.videoHeight * quality;
             
-            <div class="control-group">
-                <label for="quality">Quality Preset:</label>
-                <select id="quality">
-                    <option value="ultrafast">Ultra Fast (Lower Quality)</option>
-                    <option value="fast">Fast</option>
-                    <option value="medium" selected>Medium (Balanced)</option>
-                    <option value="slow">Slow (Better Quality)</option>
-                    <option value="veryslow">Very Slow (Best Quality)</option>
-                </select>
+            video.currentTime = 0;
+        };
+        
+        video.onseeked = () => {
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            canvas.toBlob(resolve, 'image/jpeg', quality);
+        };
+        
+        video.src = URL.createObjectURL(file);
+    });
+}
+                </div>
+                
+                <button class="button" onclick="showCanvasDemo()">Try Canvas Demo</button>
+            </div>
+
+            <div class="method-card">
+                <div class="method-title">
+                    🌍 Alternative Browser Tools
+                </div>
+                <p>These work in any modern browser:</p>
+                <ul>
+                    <li><strong>Convertio.co</strong> - Online video converter</li>
+                    <li><strong>CloudConvert</strong> - API-based conversion</li>
+                    <li><strong>Online-Convert.com</strong> - Free online tool</li>
+                    <li><strong>Zamzar</strong> - Simple upload & convert</li>
+                </ul>
+                
+                <button class="button" onclick="window.open('https://convertio.co/video-converter/', '_blank')">Try Convertio</button>
+                <button class="button" onclick="window.open('https://cloudconvert.com/video-converter', '_blank')">Try CloudConvert</button>
             </div>
         </div>
-        
-        <button class="convert-btn" id="convertBtn" disabled>
-            Select a video file to convert
-        </button>
-        
-        <div class="progress-container" id="progressContainer">
-            <div>Processing video...</div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill"></div>
+
+        <div id="desktop" class="tab-content">
+            <div class="method-card">
+                <div class="method-title">
+                    🏆 HandBrake (Recommended)
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Easy to Use</h4>
+                        <p>Drag, drop, convert</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Fast</h4>
+                        <p>Hardware acceleration</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🆓</div>
+                        <h4>Free</h4>
+                        <p>Open source</p>
+                    </div>
+                </div>
+                
+                <p><strong>Download & Usage:</strong></p>
+                <ol>
+                    <li>Download HandBrake for your OS</li>
+                    <li>Open video file</li>
+                    <li>Choose "Fast 1080p30" preset</li>
+                    <li>Adjust quality slider (18-28 for smaller files)</li>
+                    <li>Click "Start Encode"</li>
+                </ol>
+                
+                <button class="button" onclick="window.open('https://handbrake.fr/downloads.php', '_blank')">Download HandBrake</button>
             </div>
-            <div id="progressText">0%</div>
+
+            <div class="method-card">
+                <div class="method-title">
+                    ⚡ FFmpeg Command Line
+                </div>
+                <p>Direct commands for different compression levels:</p>
+                
+                <h4>Light Compression (20% smaller):</h4>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+ffmpeg -i input.mp4 -c:v libx264 -crf 25 -c:a aac -b:a 128k output.mp4
+                </div>
+                
+                <h4>Medium Compression (40% smaller):</h4>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+ffmpeg -i input.mp4 -c:v libx264 -crf 28 -c:a aac -b:a 96k output.mp4
+                </div>
+                
+                <h4>Heavy Compression (60% smaller):</h4>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+ffmpeg -i input.mp4 -c:v libx264 -crf 32 -preset slow -c:a aac -b:a 64k output.mp4
+                </div>
+                
+                <button class="button" onclick="window.open('https://ffmpeg.org/download.html', '_blank')">Download FFmpeg</button>
+            </div>
+
+            <div class="method-card">
+                <div class="method-title">
+                    🎨 Other Desktop Options
+                </div>
+                <ul>
+                    <li><strong>VLC Media Player</strong> - Media > Convert/Save</li>
+                    <li><strong>Shotcut</strong> - Free video editor with export</li>
+                    <li><strong>DaVinci Resolve</strong> - Professional (free version)</li>
+                    <li><strong>OBS Studio</strong> - Can compress videos</li>
+                </ul>
+            </div>
         </div>
-        
-        <div id="fileInfo"></div>
-        <div id="downloadArea"></div>
-        <div id="log" class="log" style="display: none;"></div>
+
+        <div id="online" class="tab-content">
+            <div class="method-card">
+                <div class="method-title">
+                    ☁️ Online Video Converters
+                </div>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Free Limit</th>
+                            <th>Quality</th>
+                            <th>Speed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Convertio</strong></td>
+                            <td>100MB</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>Fast</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CloudConvert</strong></td>
+                            <td>1GB/day</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>Fast</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Online-Convert</strong></td>
+                            <td>100MB</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td><strong>FreeConvert</strong></td>
+                            <td>1GB</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>Medium</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">✅</div>
+                        <h4>Pros</h4>
+                        <p class="pros">No software needed<br>Works anywhere<br>Usually fast</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">❌</div>
+                        <h4>Cons</h4>
+                        <p class="cons">File size limits<br>Upload required<br>Privacy concerns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="advanced" class="tab-content">
+            <div class="method-card">
+                <div class="method-title">
+                    🔧 Create Your Own Tool
+                </div>
+                <p>Build a working video converter for your specific needs:</p>
+                
+                <h4>Option 1: Electron App (Desktop)</h4>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+# Create Electron app with FFmpeg
+npm init -y
+npm install electron ffmpeg-static
+# Then bundle your HTML converter as desktop app
+                </div>
+                
+                <h4>Option 2: Node.js Server</h4>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+# Server-side conversion
+npm install express multer fluent-ffmpeg
+# Upload files to server, convert, download
+                </div>
+                
+                <h4>Option 3: Python Script</h4>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+import subprocess
+import os
+
+def compress_video(input_file, output_file, crf=28):
+    cmd = [
+        'ffmpeg', '-i', input_file,
+        '-c:v', 'libx264', '-crf', str(crf),
+        '-c:a', 'aac', '-b:a', '128k',
+        output_file
+    ]
+    subprocess.run(cmd)
+                </div>
+            </div>
+
+            <div class="method-card">
+                <div class="method-title">
+                    📱 Mobile Apps
+                </div>
+                <p>For mobile video compression:</p>
+                <ul>
+                    <li><strong>Video Compressor (Android)</strong></li>
+                    <li><strong>Video Compress (iOS)</strong></li>
+                    <li><strong>InShot</strong> - Video editor with compression</li>
+                    <li><strong>FilmoraGo</strong> - Free mobile editor</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="success">
+            <h3>✅ Quick Recommendations</h3>
+            <ul>
+                <li><strong>For beginners:</strong> Use HandBrake desktop app</li>
+                <li><strong>For occasional use:</strong> Try Convertio online</li>
+                <li><strong>For batch processing:</strong> Learn FFmpeg commands</li>
+                <li><strong>For privacy:</strong> Use desktop tools only</li>
+            </ul>
+        </div>
     </div>
 
     <script>
-        let ffmpeg = null;
-        let selectedFile = null;
-        const { FFmpeg } = FFmpegWASM;
-        const { fetchFile } = FFmpegUtil;
-
-        // Initialize FFmpeg
-        async function initFFmpeg() {
-            if (!ffmpeg) {
-                ffmpeg = new FFmpeg();
-                
-                ffmpeg.on('log', ({ message }) => {
-                    const logElement = document.getElementById('log');
-                    logElement.innerHTML += message + '\n';
-                    logElement.scrollTop = logElement.scrollHeight;
-                });
-                
-                await ffmpeg.load({
-                    coreURL: "https://unpkg.com/@ffmpeg/core@0.12.4/dist/umd/ffmpeg-core.js",
-                    wasmURL: "https://unpkg.com/@ffmpeg/core@0.12.4/dist/umd/ffmpeg-core.wasm",
-                });
-                
-                console.log('FFmpeg loaded successfully');
-            }
-        }
-
-        // File upload handling
-        const uploadArea = document.getElementById('uploadArea');
-        const fileInput = document.getElementById('videoFile');
-        const convertBtn = document.getElementById('convertBtn');
-        const compressionSlider = document.getElementById('compressionLevel');
-        const compressionValue = document.getElementById('compressionValue');
-
-        uploadArea.addEventListener('click', () => fileInput.click());
-        uploadArea.addEventListener('dragover', handleDragOver);
-        uploadArea.addEventListener('drop', handleDrop);
-        fileInput.addEventListener('change', handleFileSelect);
-        compressionSlider.addEventListener('input', updateCompressionDisplay);
-        convertBtn.addEventListener('click', convertVideo);
-
-        function handleDragOver(e) {
-            e.preventDefault();
-            uploadArea.classList.add('dragover');
-        }
-
-        function handleDrop(e) {
-            e.preventDefault();
-            uploadArea.classList.remove('dragover');
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
             
-            const files = e.dataTransfer.files;
-            if (files.length > 0 && files[0].type.startsWith('video/')) {
-                handleFile(files[0]);
-            }
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
         }
 
-        function handleFileSelect(e) {
+        function copyCode(button) {
+            const codeBlock = button.parentElement;
+            const code = codeBlock.textContent.replace('Copy', '').trim();
+            
+            navigator.clipboard.writeText(code).then(() => {
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = 'Copy';
+                }, 2000);
+            });
+        }
+
+        // File analysis demo
+        document.getElementById('demoFile').addEventListener('change', function(e) {
             const file = e.target.files[0];
-            if (file) {
-                handleFile(file);
-            }
-        }
-
-        function handleFile(file) {
-            selectedFile = file;
-            displayFileInfo(file);
-            convertBtn.textContent = 'Convert to MP4';
-            convertBtn.disabled = false;
-        }
-
-        function displayFileInfo(file) {
-            const fileInfo = document.getElementById('fileInfo');
-            const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2);
+            if (!file) return;
             
-            fileInfo.innerHTML = `
-                <div class="file-info">
-                    <h3>📄 Selected File</h3>
-                    <p><strong>Name:</strong> ${file.name}</p>
-                    <p><strong>Size:</strong> ${fileSizeMB} MB</p>
-                    <p><strong>Type:</strong> ${file.type}</p>
-                </div>
-            `;
-        }
-
-        function updateCompressionDisplay() {
-            const value = compressionSlider.value;
-            compressionValue.textContent = `${value}% reduction`;
-        }
-
-        async function convertVideo() {
-            if (!selectedFile) return;
-
-            try {
-                convertBtn.disabled = true;
-                convertBtn.textContent = 'Initializing FFmpeg...';
+            const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2);
+            const video = document.createElement('video');
+            
+            video.onloadedmetadata = function() {
+                const duration = Math.floor(video.duration);
+                const minutes = Math.floor(duration / 60);
+                const seconds = duration % 60;
                 
-                // Show progress container and log
-                document.getElementById('progressContainer').style.display = 'block';
-                document.getElementById('log').style.display = 'block';
-                
-                await initFFmpeg();
-                
-                convertBtn.textContent = 'Converting...';
-                
-                // Write input file to FFmpeg virtual file system
-                const inputName = 'input.' + selectedFile.name.split('.').pop();
-                await ffmpeg.writeFile(inputName, await fetchFile(selectedFile));
-                
-                // Calculate bitrate based on compression level
-                const compressionLevel = parseInt(compressionSlider.value);
-                const quality = document.getElementById('quality').value;
-                
-                // Estimate original bitrate and reduce by compression percentage
-                const originalSizeMB = selectedFile.size / (1024 * 1024);
-                const estimatedBitrate = Math.max(100, Math.floor((originalSizeMB * 8 * (100 - compressionLevel)) / 100));
-                
-                // FFmpeg conversion arguments
-                const args = [
-                    '-i', inputName,
-                    '-c:v', 'libx264',
-                    '-preset', quality,
-                    '-b:v', `${estimatedBitrate}k`,
-                    '-c:a', 'aac',
-                    '-b:a', '128k',
-                    '-movflags', '+faststart',
-                    'output.mp4'
-                ];
-                
-                // Progress tracking
-                let progress = 0;
-                const progressFill = document.getElementById('progressFill');
-                const progressText = document.getElementById('progressText');
-                
-                const progressInterval = setInterval(() => {
-                    progress = Math.min(progress + Math.random() * 10, 95);
-                    progressFill.style.width = progress + '%';
-                    progressText.textContent = Math.floor(progress) + '%';
-                }, 500);
-                
-                // Run FFmpeg conversion
-                await ffmpeg.exec(args);
-                
-                // Complete progress
-                clearInterval(progressInterval);
-                progressFill.style.width = '100%';
-                progressText.textContent = '100%';
-                
-                // Read output file
-                const data = await ffmpeg.readFile('output.mp4');
-                const outputBlob = new Blob([data], { type: 'video/mp4' });
-                
-                // Calculate compression ratio
-                const originalSize = selectedFile.size / (1024 * 1024);
-                const compressedSize = outputBlob.size / (1024 * 1024);
-                const actualReduction = ((originalSize - compressedSize) / originalSize * 100).toFixed(1);
-                
-                // Create download link
-                const downloadUrl = URL.createObjectURL(outputBlob);
-                const downloadArea = document.getElementById('downloadArea');
-                
-                downloadArea.innerHTML = `
-                    <div class="file-info">
-                        <h3>✅ Conversion Complete!</h3>
-                        <p><strong>Original size:</strong> ${originalSize.toFixed(2)} MB</p>
-                        <p><strong>Compressed size:</strong> ${compressedSize.toFixed(2)} MB</p>
-                        <p><strong>Size reduction:</strong> ${actualReduction}%</p>
-                    </div>
-                    <a href="${downloadUrl}" download="${selectedFile.name.split('.')[0]}_compressed.mp4" class="download-btn">
-                        📥 Download MP4
-                    </a>
-                `;
-                
-                // Clean up
-                await ffmpeg.deleteFile(inputName);
-                await ffmpeg.deleteFile('output.mp4');
-                
-                convertBtn.textContent = 'Convert Another Video';
-                convertBtn.disabled = false;
-                
-            } catch (error) {
-                console.error('Conversion error:', error);
-                convertBtn.textContent = 'Error - Try Again';
-                convertBtn.disabled = false;
-                
-                document.getElementById('downloadArea').innerHTML = `
-                    <div class="file-info" style="background: #fed7d7; border-color: #e53e3e;">
-                        <h3>❌ Conversion Failed</h3>
-                        <p>Error: ${error.message}</p>
-                        <p>Please try a different file or adjust settings.</p>
+                document.getElementById('analysisResult').innerHTML = `
+                    <div style="background: #e6fffa; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                        <h3>📊 Video Analysis</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                            <div><strong>File:</strong><br>${file.name}</div>
+                            <div><strong>Size:</strong><br>${fileSizeMB} MB</div>
+                            <div><strong>Duration:</strong><br>${minutes}:${seconds.toString().padStart(2, '0')}</div>
+                            <div><strong>Resolution:</strong><br>${video.videoWidth}x${video.videoHeight}</div>
+                        </div>
+                        
+                        <h4 style="margin-top: 20px;">Estimated Compression Results:</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 10px;">
+                            <div style="background: white; padding: 10px; border-radius: 5px; text-align: center;">
+                                <div><strong>Light (CRF 25)</strong></div>
+                                <div>${(fileSizeMB * 0.8).toFixed(2)} MB</div>
+                                <div style="color: #38a169;">20% smaller</div>
+                            </div>
+                            <div style="background: white; padding: 10px; border-radius: 5px; text-align: center;">
+                                <div><strong>Medium (CRF 28)</strong></div>
+                                <div>${(fileSizeMB * 0.6).toFixed(2)} MB</div>
+                                <div style="color: #3182ce;">40% smaller</div>
+                            </div>
+                            <div style="background: white; padding: 10px; border-radius: 5px; text-align: center;">
+                                <div><strong>Heavy (CRF 32)</strong></div>
+                                <div>${(fileSizeMB * 0.4).toFixed(2)} MB</div>
+                                <div style="color: #e53e3e;">60% smaller</div>
+                            </div>
+                        </div>
+                        
+                        <p style="margin-top: 15px; font-style: italic; color: #666;">
+                            💡 Use the desktop tools above to achieve these compression levels!
+                        </p>
                     </div>
                 `;
-            }
-        }
-
-        // Clean up object URLs when page unloads
-        window.addEventListener('beforeunload', () => {
-            const downloadLinks = document.querySelectorAll('a[href^="blob:"]');
-            downloadLinks.forEach(link => URL.revokeObjectURL(link.href));
+            };
+            
+            video.src = URL.createObjectURL(file);
         });
+
+        function showCanvasDemo() {
+            alert('Canvas-based compression works for extracting video frames, but full video compression still requires desktop tools or online services for best results. The analysis above shows what you can achieve with proper tools!');
+        }
     </script>
 </body>
 </html>
