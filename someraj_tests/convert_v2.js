@@ -35,7 +35,7 @@ async function convertToEpub(inputFilePath, coverImagePath = null) {
   // Format-specific options
   if (fileExtension === '.txt') {
     // TXT-specific options
-    command += ' --disable-markup-chapter-headings';
+    //command += ' --disable-markup-chapter-headings';
     
     // Chapter detection using XPath for h1 and h2 tags
     command += ' --chapter="//*[name()=\'h1\' or name()=\'h2\']"';
@@ -62,7 +62,7 @@ async function convertToEpub(inputFilePath, coverImagePath = null) {
     command += ' --level3-toc="//*[name()=\'h3\']"';
     
     // Enable heuristics for better HTML processing
-    command += ' --enable-heuristics';
+    //command += ' --enable-heuristics';
     
     // Remove JavaScript and forms that might not work in EPUB
     command += ' --filter-css="script,form,input,textarea,select,button"';
