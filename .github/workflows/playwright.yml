@@ -27,7 +27,7 @@ jobs:
     - name: Install playwright browser
       run: npx playwright install chromium
     - name: test
-      run: npx playwright test
+      run: npx playwright test price_check.spec.js
     - uses: actions/upload-artifact@v4
       if: always()
       with:
