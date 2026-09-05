@@ -2,12 +2,13 @@ const { chromium } = require('@playwright/test');
 const fs = require('fs');
 const https = require('https');
 const path = require('path');
+const sharp = require('sharp');
 
 // Configuration - you can modify these URLs as needed
-const authUrl = 'https://www.ebanglalibrary.com/authors/%e0%a6%b8%e0%a7%81%e0%a6%9c%e0%a6%a8-%e0%a6%a6%e0%a6%be%e0%a6%b6%e0%a6%97%e0%a7%81%e0%a6%aa%e0%a7%8d%e0%a6%a4/';
+const authUrl = '';
 
 // Add your direct book URL here, or leave as null to scrape the author page
-const directBookUrl = 'https://www.ebanglalibrary.com/books/%E0%A6%AE%E0%A6%BF%E0%A6%A1%E0%A6%A8%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%B9%E0%A6%B0%E0%A6%B0-%E0%A6%B8%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A6%95-%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%A8/'
+const directBookUrl = 'https://www.ebanglalibrary.com/books/%e0%a6%97%e0%a6%be-%e0%a6%9b%e0%a6%ae%e0%a6%9b%e0%a6%ae%e0%a7%87-%e0%a6%ad%e0%a7%8c%e0%a6%a4%e0%a6%bf%e0%a6%95-%e0%a6%85%e0%a6%b2%e0%a7%8c%e0%a6%95%e0%a6%bf%e0%a6%95-%e0%a6%b9%e0%a6%bf%e0%a6%ae/'
 
 function sanitizeFileName(name) {
   return name.replace(/[\/\\?%*:|"<>]/g, '_');
@@ -21,24 +22,60 @@ async function processBook(page, bookUrl) {
   console.log(`\n📘 Scanning book: ${bookname}`);
 
   // Step 1: Download cover image
-  try {
-    const imageUrl = await page.$eval('.entry-image-single img', img => img.src);
-    const file = fs.createWriteStream(`./covers/${safeBookname}.jpg`);
-    https.get(imageUrl, response => {
-      response.pipe(file);
-      file.on('finish', () => {
-        file.close();
-        console.log('✅ Cover image saved!');
-      });
-    });
-  } catch (err) {
-    console.log(`⚠️ No cover image for book "${bookname}"`);
+
+try {
+  // Try multiple selectors to get the image URL
+  const imageUrl = await page.evaluate(() => {
+    // Try to get from source tag (webp)
+    const source = document.querySelector('.entry-image-single source');
+    if (source && source.srcset) return source.srcset;
+    
+    // Try to get from img data-src
+    const img = document.querySelector('.entry-image-single img');
+    if (img && img.dataset.src) return img.dataset.src;
+    
+    // Fallback to img src
+    if (img && img.src) return img.src;
+    
+    return null;
+  });
+  
+  if (!imageUrl) {
+    throw new Error('No image URL found');
   }
+  
+  const protocol = imageUrl.startsWith('https') ? https : http;
+  
+  protocol.get(imageUrl, response => {
+    const chunks = [];
+    
+    response.on('data', chunk => chunks.push(chunk));
+    
+    response.on('end', async () => {
+      try {
+        const buffer = Buffer.concat(chunks);
+        
+        await sharp(buffer)
+          .jpeg({ quality: 90 })
+          .toFile(`./covers/${safeBookname}.jpg`);
+        
+        console.log('✅ Cover image saved as JPG!');
+      } catch (conversionErr) {
+        console.log(`⚠️ Error converting image: ${conversionErr.message}`);
+      }
+    });
+  }).on('error', (err) => {
+    console.log(`⚠️ Error downloading: ${err.message}`);
+  });
+} catch (err) {
+  console.log(`⚠️ No cover image for book "${bookname}"`);
+}
 
   // Step 2: Start content scraping
   try {
-    await page.locator('.ld-item-list-item-preview').first().click();
-    await page.waitForLoadState('domcontentloaded');
+    //await page.pause()
+    await page.locator('.ld-item-list-item-preview').first().click({force: true});
+    await page.waitForLoadState('load');
 
     const chapterLinks = await page.locator('.ld-lesson-item a').all();
     console.log(`Total Chapters : ${chapterLinks.length}`)
