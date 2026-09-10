@@ -7,7 +7,13 @@ test('check price change for iphone 17 Pro in JB-HiFi', async ({ page }) => {
   expect (Number(present_price)).toEqual(1699)
 });
 
-test('GET Officeworks product price API returns valid data', async ({ request }) => {
+test('check price change for iphone 18 Pro in JB-HiFi', async ({ page }) => {
+  await page.goto('https://www.jbhifi.com.au/products/apple-iphone-18-pro-256gb-burgundy');
+  const present_price = await page.locator('#pdp-price-cta span').last().textContent()
+  expect (Number(present_price)).toEqual(2099)
+});
+
+test('check price change for iphone 17 Pro in Officeworks', async ({ request }) => {
   const endpoint = 'https://www.officeworks.com.au/catalogue-app/api/prices/IP17PR25OG';
 
   // Send the GET request
@@ -25,6 +31,26 @@ test('GET Officeworks product price API returns valid data', async ({ request })
   
   
 });
+
+test('check price change for iphone 18 Pro in Officeworks', async ({ request }) => {
+  const endpoint = 'https://www.officeworks.com.au/catalogue-app/api/prices/IP18PR2BY';
+
+  // Send the GET request
+  const response = await request.get(endpoint, {
+    headers: {
+      'Accept': 'application/json',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+  });
+  expect(response.status()).toBe(200);
+
+  // 2. Parse the response body as JSON
+  const responseBody = await response.json();
+  expect(responseBody.IP17PR25OG.price).toEqual(209700)
+  
+  
+});
+
 
 test('Check passport status', async ({ request }) => {
   const endpoint = 'https://api2.passportindia.gov.in/v1/mproddc/online/gpsp/trackApplicationStatus';
