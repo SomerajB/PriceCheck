@@ -65,7 +65,7 @@ test('Check passport status', async ({ request }) => {
 
   // 2. Parse the response body as JSON
   const responseBody = await response.json();
-  expect(responseBody.requestResponseMap.applicationStatus[0].TXT_MSG_KEY).toEqual('Police Verification Report (PVR) awaited')
+  expect(responseBody.requestResponseMap.applicationStatus[0].TXT_MSG_KEY).toEqual('Application is under process at Indian Embassy/Consulate')
   
   
 });
