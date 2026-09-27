@@ -27,7 +27,7 @@ test('check price change for iphone 17 Pro in Officeworks', async ({ request }) 
 
   // 2. Parse the response body as JSON
   const responseBody = await response.json();
-  expect(responseBody.IP17PR25OG.price).toEqual(169900)
+  expect(responseBody.IP17PR25OG.price).toEqual(199700)
   
   
 });
@@ -73,7 +73,7 @@ test('Check passport status', async ({ request }) => {
 test('check for new ghost story', async ({ page }) => {
   await page.goto('https://www.ebanglalibrary.com/genres/%e0%a6%ad%e0%a7%8c%e0%a6%a4%e0%a6%bf%e0%a6%95/?_sorting=newfirst');
   const latestStory = await page.locator('article>div>h2').first().textContent()
-  expect (latestStory).toEqual('গা-ছমছমে ভৌতিক অলৌকিক – হিমাদ্রিকিশোর দাশগুপ্ত')
+  expect (latestStory).toEqual('আতঙ্কের নেপথ্যে – পল্লবী সেনগুপ্ত')
 });
 
 
