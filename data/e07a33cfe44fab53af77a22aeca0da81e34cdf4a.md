@@ -1,0 +1,2060 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link [ref=e2] [cursor=pointer]:
+    - /url: "#"
+    - text: ___
+  - generic [ref=e5]:
+    - banner [ref=e7]:
+      - generic [ref=e9]:
+        - generic [ref=e13]:
+          - generic [ref=e15] [cursor=pointer]:
+            - generic [ref=e16]:
+              - img [ref=e17]
+              - paragraph [ref=e21]:
+                - text: iPhone 18 Pro Out Now! Trade-in & Upgrade!
+                - link "Learn more" [ref=e22]:
+                  - /url: https://www.jbhifi.com.au/pages/tradein
+            - button "Close" [ref=e23]:
+              - img [ref=e24]
+          - generic [ref=e27] [cursor=pointer]:
+            - paragraph [ref=e30]:
+              - text: Seen it cheaper? Ask for a JB Deal!
+              - link "Live chat" [ref=e31]:
+                - /url: /
+              - text: or call
+              - link "13 52 44" [ref=e32]:
+                - /url: tel:+61135244
+              - text: .
+            - button "Close" [ref=e33]:
+              - img [ref=e34]
+        - generic [ref=e36]:
+          - link "Always Cheap Prices" [ref=e38] [cursor=pointer]:
+            - /url: /
+            - img [ref=e39]
+            - generic [ref=e41]: Always Cheap Prices
+          - generic [ref=e43]:
+            - img [ref=e44]
+            - textbox "Search products, brands, and more…" [ref=e47]
+          - generic [ref=e48]:
+            - button "Track order" [ref=e50] [cursor=pointer]:
+              - img [ref=e51]
+              - generic [ref=e53]: Track order
+            - button "Stores" [ref=e55] [cursor=pointer]:
+              - img [ref=e56]
+              - generic [ref=e60]: Stores
+            - button "Log in" [ref=e62] [cursor=pointer]:
+              - img [ref=e63]
+              - generic [ref=e65]: Log in
+            - button "Cart" [ref=e67] [cursor=pointer]:
+              - img [ref=e68]
+              - generic [ref=e71]: Cart
+        - navigation [ref=e73]:
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - link "New" [ref=e77] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/blogs/new-at-jb
+            - listitem [ref=e78]:
+              - button "Products" [ref=e79] [cursor=pointer]
+            - listitem [ref=e80]:
+              - button "Brands" [ref=e81] [cursor=pointer]
+            - listitem [ref=e82]:
+              - button "Deals & Catalogues" [ref=e83] [cursor=pointer]
+            - listitem [ref=e84]:
+              - button "Clearance" [ref=e85] [cursor=pointer]
+            - listitem [ref=e86]:
+              - button "Services" [ref=e87] [cursor=pointer]
+            - listitem [ref=e88]:
+              - button "Gift Cards" [ref=e89] [cursor=pointer]
+            - listitem [ref=e90]:
+              - button "Join JB Perks" [ref=e91] [cursor=pointer]
+            - listitem [ref=e92]:
+              - button "News & Reviews" [ref=e93] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e101]:
+            - link "Hero Banner" [ref=e102] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/products/lg-77-oled-evo-ai-w6-wallpaper-4k-smart-tv-2026
+            - img "LG76 OLEDW6 Leaderboard Mobile 686X280" [ref=e103]
+          - generic [ref=e106]:
+            - link "Hero Banner" [ref=e107] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/collections/this-weeks-hottest-deals
+            - img "jb-au-20261001-price-frenzy-DT" [ref=e108]
+          - generic [ref=e111]:
+            - link "Hero Banner" [ref=e112] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/collections/40-off-deals
+            - img "jb-au-20260924-40-po-deals-DT" [ref=e113]
+          - generic [ref=e116]:
+            - link "Hero Banner" [ref=e117] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/collections/mobile-phones/iphone-18-series
+            - img "jb-au-20250910-APPLE-IPHONE-18-pro-DT" [ref=e118]
+          - generic [ref=e121]:
+            - link "Hero Banner" [ref=e122] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/collections/mega-gaming-sale
+            - img "jb-au-20260924-mega-gaming-sale-DT" [ref=e123]
+          - generic [ref=e126]:
+            - generic [ref=e128]:
+              - generic [ref=e129]: Playstation sale on now!
+              - button "View all" [ref=e130] [cursor=pointer]:
+                - generic [ref=e131]: View all
+            - generic [ref=e134]:
+              - 'link "$20 OFF^ PS5 PlayStation 5 DualSense Wireless Controller Midnight Black SONY COMP PS5 PlayStation 5 DualSense Wireless Controller Midnight Black Ticket $119 $ 99 $ 20 OFF^ Ends: 11 October 2026" [ref=e135] [cursor=pointer]':
+                - /url: /products/ps5-playstation-5-dualsense-wireless-controller-midnight-black-1
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - generic [ref=e140]:
+                      - img [ref=e141]
+                      - generic [ref=e144]:
+                        - generic [ref=e145]: $20
+                        - generic [ref=e146]: OFF^
+                    - img "PS5 PlayStation 5 DualSense Wireless Controller Midnight Black" [ref=e147]
+                  - generic [ref=e148]:
+                    - generic [ref=e149]:
+                      - img "SONY COMP" [ref=e151]
+                      - generic [ref=e152]: PS5 PlayStation 5 DualSense Wireless Controller Midnight Black
+                    - generic [ref=e153]:
+                      - generic [ref=e155]:
+                        - generic [ref=e158]:
+                          - generic [ref=e159]: Ticket
+                          - generic [ref=e161]:
+                            - img [ref=e162]
+                            - text: $119
+                        - generic [ref=e166]:
+                          - generic [ref=e167]: $
+                          - generic [ref=e168]: "99"
+                        - generic [ref=e171]:
+                          - generic [ref=e172]:
+                            - generic [ref=e173]: $
+                            - generic [ref=e174]: "20"
+                          - generic [ref=e175]: OFF^
+                          - img [ref=e176]
+                      - generic [ref=e179]:
+                        - text: "Ends:"
+                        - paragraph [ref=e180]: 11 October 2026
+              - 'link "$150 OFF^ Logitech G G923 SE TRUEFORCE Racing Wheel + Pedals and Shifter for PlayStation LOGITECH-G Logitech G G923 SE TRUEFORCE Racing Wheel + Pedals and Shifter for PlayStation Ticket $649 $ 499 $ 150 OFF^ Ends: 11 October 2026" [ref=e181] [cursor=pointer]':
+                - /url: /products/logitech-g-g923-se-trueforce-racing-wheel-pedals-and-shifter-for-playstation
+                - generic [ref=e182]:
+                  - generic [ref=e183]:
+                    - generic [ref=e186]:
+                      - img [ref=e187]
+                      - generic [ref=e190]:
+                        - generic [ref=e191]: $150
+                        - generic [ref=e192]: OFF^
+                    - img "Logitech G G923 SE TRUEFORCE Racing Wheel + Pedals and Shifter for PlayStation" [ref=e193]
+                  - generic [ref=e194]:
+                    - generic [ref=e195]:
+                      - img "LOGITECH-G" [ref=e197]
+                      - generic [ref=e198]: Logitech G G923 SE TRUEFORCE Racing Wheel + Pedals and Shifter for PlayStation
+                    - generic [ref=e199]:
+                      - generic [ref=e201]:
+                        - generic [ref=e204]:
+                          - generic [ref=e205]: Ticket
+                          - generic [ref=e207]:
+                            - img [ref=e208]
+                            - text: $649
+                        - generic [ref=e212]:
+                          - generic [ref=e213]: $
+                          - generic [ref=e214]: "499"
+                        - generic [ref=e217]:
+                          - generic [ref=e218]:
+                            - generic [ref=e219]: $
+                            - generic [ref=e220]: "150"
+                          - generic [ref=e221]: OFF^
+                          - img [ref=e222]
+                      - generic [ref=e225]:
+                        - text: "Ends:"
+                        - paragraph [ref=e226]: 11 October 2026
+          - generic [ref=e229]:
+            - link "Hero Banner" [ref=e230] [cursor=pointer]:
+              - /url: https://jbhi.fi/906882
+            - img "jb-au-20260924-homepage-beats360-launch-DT" [ref=e231]
+          - generic [ref=e234]:
+            - link "Hero Banner" [ref=e235] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/collections/headphones-speakers-audio?sortBy=published_at_desc&Brand=SONOS
+            - img "Carousel-Homepage-desktop FULL BLEED" [ref=e236]
+          - generic [ref=e239]:
+            - link "Hero Banner" [ref=e240] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/products/lg-77-oled-evo-ai-w6-wallpaper-4k-smart-tv-2026
+            - img "LG76 OLEDW6 Leaderboard Mobile 686X280" [ref=e241]
+          - generic [ref=e244]:
+            - link "Hero Banner" [ref=e245] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/collections/this-weeks-hottest-deals
+            - img "jb-au-20261001-price-frenzy-DT" [ref=e246]
+        - generic [ref=e247] [cursor=pointer]: prev
+        - generic [ref=e248] [cursor=pointer]: next
+      - generic [ref=e263]:
+        - generic [ref=e265]:
+          - link "image 22 New at JB!" [ref=e267] [cursor=pointer]:
+            - /url: https://www.jbhifi.com.au/blogs/new-at-jb
+            - img "image 22" [ref=e269]
+            - generic [ref=e270]: New at JB!
+          - link "Hottest Deals Hottest Deals" [ref=e272] [cursor=pointer]:
+            - /url: /collections/this-weeks-hottest-deals
+            - img "Hottest Deals" [ref=e274]
+            - generic [ref=e275]: Hottest Deals
+          - link "fold8 hero Mobile Phones" [ref=e277] [cursor=pointer]:
+            - /url: /collections/mobile-phones
+            - img "fold8 hero" [ref=e279]
+            - generic [ref=e280]: Mobile Phones
+          - link "cat-tvs TVs & Home Theatre" [ref=e282] [cursor=pointer]:
+            - /url: /collections/tvs
+            - img "cat-tvs" [ref=e284]
+            - generic [ref=e285]: TVs & Home Theatre
+          - link "icon-computers Computers & Tablets" [ref=e287] [cursor=pointer]:
+            - /url: /collections/computers-tablets
+            - img "icon-computers" [ref=e289]
+            - generic [ref=e290]: Computers & Tablets
+          - link "cat-IT-accessories IT Accessories & PC Parts" [ref=e292] [cursor=pointer]:
+            - /url: /collections/computer-parts-accessories
+            - img "cat-IT-accessories" [ref=e294]
+            - generic [ref=e295]: IT Accessories & PC Parts
+          - link "sony wh6 homepage hero Headphones, Speakers & Audio" [ref=e297] [cursor=pointer]:
+            - /url: /collections/headphones-speakers-audio
+            - img "sony wh6 homepage hero" [ref=e299]
+            - generic [ref=e300]: Headphones, Speakers & Audio
+          - link "jb-au-20231127-homepage-cat-tiles-home-smalls Home Appliances" [ref=e302] [cursor=pointer]:
+            - /url: /collections/home-appliances
+            - img "jb-au-20231127-homepage-cat-tiles-home-smalls" [ref=e304]
+            - generic [ref=e305]: Home Appliances
+          - link "cat-smarthome Smart Home" [ref=e307] [cursor=pointer]:
+            - /url: /collections/smart-home
+            - img "cat-smarthome" [ref=e309]
+            - generic [ref=e310]: Smart Home
+          - link "cat-fitness0625 Fitness & Wearables" [ref=e312] [cursor=pointer]:
+            - /url: /collections/health-fitness-wearables
+            - img "cat-fitness0625" [ref=e314]
+            - generic [ref=e315]: Fitness & Wearables
+          - link "cat-health-beauty Health & Beauty" [ref=e317] [cursor=pointer]:
+            - /url: /collections/wellbeing-personal-care
+            - img "cat-health-beauty" [ref=e319]
+            - generic [ref=e320]: Health & Beauty
+          - link "cat-rideables Outdoors & Travel" [ref=e322] [cursor=pointer]:
+            - /url: /collections/outdoors-travel
+            - img "cat-rideables" [ref=e324]
+            - generic [ref=e325]: Outdoors & Travel
+          - link "icon-gaming Gaming" [ref=e327] [cursor=pointer]:
+            - /url: /collections/games-consoles
+            - img "icon-gaming" [ref=e329]
+            - generic [ref=e330]: Gaming
+          - link "icon-movies Movies & TV Shows" [ref=e332] [cursor=pointer]:
+            - /url: /collections/movies-tv-shows
+            - img "icon-movies" [ref=e334]
+            - generic [ref=e335]: Movies & TV Shows
+          - link "icon-music Music & Vinyl" [ref=e337] [cursor=pointer]:
+            - /url: /collections/music
+            - img "icon-music" [ref=e339]
+            - generic [ref=e340]: Music & Vinyl
+          - link "icon-collectibles Collectibles & Merchandise" [ref=e342] [cursor=pointer]:
+            - /url: /collections/collectibles-merchandise
+            - img "icon-collectibles" [ref=e344]
+            - generic [ref=e345]: Collectibles & Merchandise
+          - link "icon-cameras Cameras & Drones" [ref=e347] [cursor=pointer]:
+            - /url: /collections/drones-cameras
+            - img "icon-cameras" [ref=e349]
+            - generic [ref=e350]: Cameras & Drones
+          - link "icon-content-creation Content Creator Gear" [ref=e352] [cursor=pointer]:
+            - /url: /collections/content-creators
+            - img "icon-content-creation" [ref=e354]
+            - generic [ref=e355]: Content Creator Gear
+          - link "cat-office-supplies Office Supplies" [ref=e357] [cursor=pointer]:
+            - /url: /collections/office-supplies
+            - img "cat-office-supplies" [ref=e359]
+            - generic [ref=e360]: Office Supplies
+          - link "cat-all-marketplace Online-only Range" [ref=e362] [cursor=pointer]:
+            - /url: https://www.jbhifi.com.au/pages/marketplace
+            - img "cat-all-marketplace" [ref=e364]
+            - generic [ref=e365]: Online-only Range
+        - img [ref=e369] [cursor=pointer]
+        - img [ref=e372] [cursor=pointer]
+      - generic [ref=e376]:
+        - heading "What's hot" [level=3] [ref=e379]
+        - generic [ref=e381]:
+          - generic [ref=e385]:
+            - button "Hottest Deals" [ref=e388] [cursor=pointer]
+            - button "Computers" [ref=e391] [cursor=pointer]
+            - button "Mega Gaming Sale" [ref=e394] [cursor=pointer]
+            - button "TVs" [ref=e397] [cursor=pointer]
+            - button "Mobile Phones" [ref=e400] [cursor=pointer]
+            - button "Home Appliances" [ref=e403] [cursor=pointer]
+            - button "iPhone 18 Series - Out now" [ref=e406] [cursor=pointer]
+            - button "We Think You'll Like" [ref=e409] [cursor=pointer]
+            - button "Recently Viewed" [ref=e412] [cursor=pointer]
+          - generic [ref=e414]:
+            - generic [ref=e415]:
+              - link "View all" [ref=e419] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/this-weeks-hottest-deals
+                - text: View all
+                - img [ref=e420]
+              - generic [ref=e425]:
+                - generic [ref=e427]:
+                  - generic [ref=e429]:
+                    - generic [ref=e430]:
+                      - img [ref=e432] [cursor=pointer]
+                      - generic [ref=e434]: You're one step away from having this in your wishlist!
+                      - generic [ref=e435]:
+                        - button "Create account" [ref=e436] [cursor=pointer]:
+                          - generic [ref=e437]: Create account
+                        - button "Log in" [ref=e438] [cursor=pointer]:
+                          - generic [ref=e439]: Log in
+                    - generic [ref=e440]:
+                      - generic [ref=e442]: On Sale
+                      - button "Add to wishlist" [ref=e444] [cursor=pointer]:
+                        - img [ref=e445]
+                    - generic [ref=e447]:
+                      - link "Samsung Galaxy S26 Ultra 5G 256GB (Black) SAMSUNG Samsung Galaxy S26 Ultra 5G 256GB (Black) 4.8 (2854)" [ref=e448] [cursor=pointer]:
+                        - /url: /products/samsung-galaxy-s26-ultra-5g-256gb-black
+                        - generic [ref=e449]:
+                          - img "Samsung Galaxy S26 Ultra 5G 256GB (Black)" [ref=e451]
+                          - generic [ref=e452]:
+                            - img "SAMSUNG" [ref=e454]
+                            - generic [ref=e455]: Samsung Galaxy S26 Ultra 5G 256GB (Black)
+                            - button "4.8 (2854)" [ref=e458]:
+                              - generic [ref=e459]:
+                                - generic [ref=e460]:
+                                  - img [ref=e461]
+                                  - img [ref=e463]
+                                  - img [ref=e465]
+                                  - img [ref=e467]
+                                  - img [ref=e469]
+                                - img [ref=e471]
+                                - img [ref=e473]
+                                - img [ref=e475]
+                                - img [ref=e477]
+                                - img [ref=e479]
+                              - generic [ref=e481]:
+                                - generic [ref=e482]: "4.8"
+                                - generic [ref=e483]: (2854)
+                      - generic [ref=e485]:
+                        - link "Ticket $2199 $ 1699 $ 500 OFF^" [ref=e487] [cursor=pointer]:
+                          - /url: /products/samsung-galaxy-s26-ultra-5g-256gb-black
+                          - generic [ref=e488]:
+                            - generic [ref=e491]:
+                              - generic [ref=e492]: Ticket
+                              - generic [ref=e494]:
+                                - img [ref=e495]
+                                - text: $2199
+                            - generic [ref=e499]:
+                              - generic [ref=e500]: $
+                              - generic [ref=e501]: "1699"
+                            - generic [ref=e504]:
+                              - generic [ref=e505]:
+                                - generic [ref=e506]: $
+                                - generic [ref=e507]: "500"
+                              - generic [ref=e508]: OFF^
+                              - img [ref=e509]
+                        - button "Add to cart Added" [ref=e514] [cursor=pointer]:
+                          - generic [ref=e515]: Add to cart
+                          - generic [ref=e516]: Added
+                  - generic [ref=e518]:
+                    - generic [ref=e519]:
+                      - img [ref=e521] [cursor=pointer]
+                      - generic [ref=e523]: You're one step away from having this in your wishlist!
+                      - generic [ref=e524]:
+                        - button "Create account" [ref=e525] [cursor=pointer]:
+                          - generic [ref=e526]: Create account
+                        - button "Log in" [ref=e527] [cursor=pointer]:
+                          - generic [ref=e528]: Log in
+                    - generic [ref=e529]:
+                      - generic [ref=e531]: On Sale
+                      - button "Add to wishlist" [ref=e533] [cursor=pointer]:
+                        - img [ref=e534]
+                    - generic [ref=e536]:
+                      - link "LG 65\" OLED EVO AI G6 4K Smart TV [2026] LG LG 65\" OLED EVO AI G6 4K Smart TV [2026] 4.9 (15)" [ref=e537] [cursor=pointer]:
+                        - /url: /products/lg-65-oled-evo-ai-g6-4k-smart-tv-2026
+                        - generic [ref=e538]:
+                          - img "LG 65\" OLED EVO AI G6 4K Smart TV [2026]" [ref=e540]
+                          - generic [ref=e541]:
+                            - img "LG" [ref=e543]
+                            - generic [ref=e544]: LG 65" OLED EVO AI G6 4K Smart TV [2026]
+                            - button "4.9 (15)" [ref=e547]:
+                              - generic [ref=e548]:
+                                - generic [ref=e549]:
+                                  - img [ref=e550]
+                                  - img [ref=e552]
+                                  - img [ref=e554]
+                                  - img [ref=e556]
+                                  - img [ref=e558]
+                                - img [ref=e560]
+                                - img [ref=e562]
+                                - img [ref=e564]
+                                - img [ref=e566]
+                                - img [ref=e568]
+                              - generic [ref=e570]:
+                                - generic [ref=e571]: "4.9"
+                                - generic [ref=e572]: (15)
+                      - generic [ref=e574]:
+                        - link "Ticket $4995 $ 3995 $ 1000 OFF^" [ref=e576] [cursor=pointer]:
+                          - /url: /products/lg-65-oled-evo-ai-g6-4k-smart-tv-2026
+                          - generic [ref=e577]:
+                            - generic [ref=e580]:
+                              - generic [ref=e581]: Ticket
+                              - generic [ref=e583]:
+                                - img [ref=e584]
+                                - text: $4995
+                            - generic [ref=e588]:
+                              - generic [ref=e589]: $
+                              - generic [ref=e590]: "3995"
+                            - generic [ref=e593]:
+                              - generic [ref=e594]:
+                                - generic [ref=e595]: $
+                                - generic [ref=e596]: "1000"
+                              - generic [ref=e597]: OFF^
+                              - img [ref=e598]
+                        - button "Add to cart Added" [ref=e603] [cursor=pointer]:
+                          - generic [ref=e604]: Add to cart
+                          - generic [ref=e605]: Added
+                  - generic [ref=e607]:
+                    - generic [ref=e608]:
+                      - img [ref=e610] [cursor=pointer]
+                      - generic [ref=e612]: You're one step away from having this in your wishlist!
+                      - generic [ref=e613]:
+                        - button "Create account" [ref=e614] [cursor=pointer]:
+                          - generic [ref=e615]: Create account
+                        - button "Log in" [ref=e616] [cursor=pointer]:
+                          - generic [ref=e617]: Log in
+                    - generic [ref=e618]:
+                      - generic [ref=e620]: On Sale
+                      - button "Add to wishlist" [ref=e622] [cursor=pointer]:
+                        - img [ref=e623]
+                    - generic [ref=e625]:
+                      - link "Roborock Saros 10R Robotic Vacuum Cleaner ROBOROCK Roborock Saros 10R Robotic Vacuum Cleaner 3.0 (2)" [ref=e626] [cursor=pointer]:
+                        - /url: /products/roborock-saros-10r-robotic-vacuum-cleaner
+                        - generic [ref=e627]:
+                          - img "Roborock Saros 10R Robotic Vacuum Cleaner" [ref=e629]
+                          - generic [ref=e630]:
+                            - img "ROBOROCK" [ref=e632]
+                            - generic [ref=e633]: Roborock Saros 10R Robotic Vacuum Cleaner
+                            - button "3.0 (2)" [ref=e636]:
+                              - generic [ref=e637]:
+                                - generic [ref=e638]:
+                                  - img [ref=e639]
+                                  - img [ref=e641]
+                                  - img [ref=e643]
+                                  - img [ref=e645]
+                                  - img [ref=e647]
+                                - img [ref=e649]
+                                - img [ref=e651]
+                                - img [ref=e653]
+                                - img [ref=e655]
+                                - img [ref=e657]
+                              - generic [ref=e659]:
+                                - generic [ref=e660]: "3.0"
+                                - generic [ref=e661]: (2)
+                      - generic [ref=e663]:
+                        - link "Ticket $2899 $ 1449 $ 1450 OFF^" [ref=e665] [cursor=pointer]:
+                          - /url: /products/roborock-saros-10r-robotic-vacuum-cleaner
+                          - generic [ref=e666]:
+                            - generic [ref=e669]:
+                              - generic [ref=e670]: Ticket
+                              - generic [ref=e672]:
+                                - img [ref=e673]
+                                - text: $2899
+                            - generic [ref=e677]:
+                              - generic [ref=e678]: $
+                              - generic [ref=e679]: "1449"
+                            - generic [ref=e682]:
+                              - generic [ref=e683]:
+                                - generic [ref=e684]: $
+                                - generic [ref=e685]: "1450"
+                              - generic [ref=e686]: OFF^
+                              - img [ref=e687]
+                        - button "Add to cart Added" [ref=e692] [cursor=pointer]:
+                          - generic [ref=e693]: Add to cart
+                          - generic [ref=e694]: Added
+                  - generic [ref=e696]:
+                    - generic [ref=e697]:
+                      - img [ref=e699] [cursor=pointer]
+                      - generic [ref=e701]: You're one step away from having this in your wishlist!
+                      - generic [ref=e702]:
+                        - button "Create account" [ref=e703] [cursor=pointer]:
+                          - generic [ref=e704]: Create account
+                        - button "Log in" [ref=e705] [cursor=pointer]:
+                          - generic [ref=e706]: Log in
+                    - generic [ref=e707]:
+                      - generic [ref=e709]: On Sale
+                      - button "Add to wishlist" [ref=e711] [cursor=pointer]:
+                        - img [ref=e712]
+                    - generic [ref=e714]:
+                      - link "Meta Quest 3S 128GB META QUEST Meta Quest 3S 128GB 4.1 (25)" [ref=e715] [cursor=pointer]:
+                        - /url: /products/meta-quest-3s-128gb
+                        - generic [ref=e716]:
+                          - img "Meta Quest 3S 128GB" [ref=e718]
+                          - generic [ref=e719]:
+                            - img "META QUEST" [ref=e721]
+                            - generic [ref=e722]: Meta Quest 3S 128GB
+                            - button "4.1 (25)" [ref=e725]:
+                              - generic [ref=e726]:
+                                - generic [ref=e727]:
+                                  - img [ref=e728]
+                                  - img [ref=e730]
+                                  - img [ref=e732]
+                                  - img [ref=e734]
+                                  - img [ref=e736]
+                                - img [ref=e738]
+                                - img [ref=e740]
+                                - img [ref=e742]
+                                - img [ref=e744]
+                                - img [ref=e746]
+                              - generic [ref=e748]:
+                                - generic [ref=e749]: "4.1"
+                                - generic [ref=e750]: (25)
+                      - generic [ref=e752]:
+                        - link "Ticket $569 $ 479 $ 90 OFF^" [ref=e754] [cursor=pointer]:
+                          - /url: /products/meta-quest-3s-128gb
+                          - generic [ref=e755]:
+                            - generic [ref=e758]:
+                              - generic [ref=e759]: Ticket
+                              - generic [ref=e761]:
+                                - img [ref=e762]
+                                - text: $569
+                            - generic [ref=e766]:
+                              - generic [ref=e767]: $
+                              - generic [ref=e768]: "479"
+                            - generic [ref=e771]:
+                              - generic [ref=e772]:
+                                - generic [ref=e773]: $
+                                - generic [ref=e774]: "90"
+                              - generic [ref=e775]: OFF^
+                              - img [ref=e776]
+                        - button "Add to cart Added" [ref=e781] [cursor=pointer]:
+                          - generic [ref=e782]: Add to cart
+                          - generic [ref=e783]: Added
+                  - generic [ref=e785]:
+                    - generic [ref=e786]:
+                      - img [ref=e788] [cursor=pointer]
+                      - generic [ref=e790]: You're one step away from having this in your wishlist!
+                      - generic [ref=e791]:
+                        - button "Create account" [ref=e792] [cursor=pointer]:
+                          - generic [ref=e793]: Create account
+                        - button "Log in" [ref=e794] [cursor=pointer]:
+                          - generic [ref=e795]: Log in
+                    - generic [ref=e796]:
+                      - generic [ref=e798]: On Sale
+                      - button "Add to wishlist" [ref=e800] [cursor=pointer]:
+                        - img [ref=e801]
+                    - generic [ref=e803]:
+                      - link "HP Laptop 15-fc0816AU 15.6\" Full HD Laptop (Ryzen 7)[512GB] HP HP Laptop 15-fc0816AU 15.6\" Full HD Laptop (Ryzen 7)[512GB] 3.9 (8)" [ref=e804] [cursor=pointer]:
+                        - /url: /products/hp-laptop-15-fc0816au-15-6-full-hd-laptop-ryzen-7512gb
+                        - generic [ref=e805]:
+                          - img "HP Laptop 15-fc0816AU 15.6\" Full HD Laptop (Ryzen 7)[512GB]" [ref=e807]
+                          - generic [ref=e808]:
+                            - img "HP" [ref=e810]
+                            - generic [ref=e811]: HP Laptop 15-fc0816AU 15.6" Full HD Laptop (Ryzen 7)[512GB]
+                            - button "3.9 (8)" [ref=e814]:
+                              - generic [ref=e815]:
+                                - generic [ref=e816]:
+                                  - img [ref=e817]
+                                  - img [ref=e819]
+                                  - img [ref=e821]
+                                  - img [ref=e823]
+                                  - img [ref=e825]
+                                - img [ref=e827]
+                                - img [ref=e829]
+                                - img [ref=e831]
+                                - img [ref=e833]
+                                - img [ref=e835]
+                              - generic [ref=e837]:
+                                - generic [ref=e838]: "3.9"
+                                - generic [ref=e839]: (8)
+                      - generic [ref=e841]:
+                        - link "Ticket $1899 $ 1099 $ 800 OFF^" [ref=e843] [cursor=pointer]:
+                          - /url: /products/hp-laptop-15-fc0816au-15-6-full-hd-laptop-ryzen-7512gb
+                          - generic [ref=e844]:
+                            - generic [ref=e847]:
+                              - generic [ref=e848]: Ticket
+                              - generic [ref=e850]:
+                                - img [ref=e851]
+                                - text: $1899
+                            - generic [ref=e855]:
+                              - generic [ref=e856]: $
+                              - generic [ref=e857]: "1099"
+                            - generic [ref=e860]:
+                              - generic [ref=e861]:
+                                - generic [ref=e862]: $
+                                - generic [ref=e863]: "800"
+                              - generic [ref=e864]: OFF^
+                              - img [ref=e865]
+                        - button "Add to cart Added" [ref=e870] [cursor=pointer]:
+                          - generic [ref=e871]: Add to cart
+                          - generic [ref=e872]: Added
+                  - generic [ref=e874]:
+                    - generic [ref=e875]:
+                      - img [ref=e877] [cursor=pointer]
+                      - generic [ref=e879]: You're one step away from having this in your wishlist!
+                      - generic [ref=e880]:
+                        - button "Create account" [ref=e881] [cursor=pointer]:
+                          - generic [ref=e882]: Create account
+                        - button "Log in" [ref=e883] [cursor=pointer]:
+                          - generic [ref=e884]: Log in
+                    - generic [ref=e885]:
+                      - generic [ref=e887]: On Sale
+                      - button "Add to wishlist" [ref=e889] [cursor=pointer]:
+                        - img [ref=e890]
+                    - generic [ref=e892]:
+                      - link "Garmin VivoActive 5 Smart Watch (Black/Slate) GARMIN Garmin VivoActive 5 Smart Watch (Black/Slate) 4.3 (1541)" [ref=e893] [cursor=pointer]:
+                        - /url: /products/garmin-vivoactive-5-smart-watch-black-slate
+                        - generic [ref=e894]:
+                          - img "Garmin VivoActive 5 Smart Watch (Black/Slate)" [ref=e896]
+                          - generic [ref=e897]:
+                            - img "GARMIN" [ref=e899]
+                            - generic [ref=e900]: Garmin VivoActive 5 Smart Watch (Black/Slate)
+                            - button "4.3 (1541)" [ref=e903]:
+                              - generic [ref=e904]:
+                                - generic [ref=e905]:
+                                  - img [ref=e906]
+                                  - img [ref=e908]
+                                  - img [ref=e910]
+                                  - img [ref=e912]
+                                  - img [ref=e914]
+                                - img [ref=e916]
+                                - img [ref=e918]
+                                - img [ref=e920]
+                                - img [ref=e922]
+                                - img [ref=e924]
+                              - generic [ref=e926]:
+                                - generic [ref=e927]: "4.3"
+                                - generic [ref=e928]: (1541)
+                      - generic [ref=e930]:
+                        - link "Ticket $499 $ 299 $ 200 OFF^" [ref=e932] [cursor=pointer]:
+                          - /url: /products/garmin-vivoactive-5-smart-watch-black-slate
+                          - generic [ref=e933]:
+                            - generic [ref=e936]:
+                              - generic [ref=e937]: Ticket
+                              - generic [ref=e939]:
+                                - img [ref=e940]
+                                - text: $499
+                            - generic [ref=e944]:
+                              - generic [ref=e945]: $
+                              - generic [ref=e946]: "299"
+                            - generic [ref=e949]:
+                              - generic [ref=e950]:
+                                - generic [ref=e951]: $
+                                - generic [ref=e952]: "200"
+                              - generic [ref=e953]: OFF^
+                              - img [ref=e954]
+                        - button "Add to cart Added" [ref=e959] [cursor=pointer]:
+                          - generic [ref=e960]: Add to cart
+                          - generic [ref=e961]: Added
+                  - generic [ref=e963]:
+                    - generic [ref=e964]:
+                      - img [ref=e966] [cursor=pointer]
+                      - generic [ref=e968]: You're one step away from having this in your wishlist!
+                      - generic [ref=e969]:
+                        - button "Create account" [ref=e970] [cursor=pointer]:
+                          - generic [ref=e971]: Create account
+                        - button "Log in" [ref=e972] [cursor=pointer]:
+                          - generic [ref=e973]: Log in
+                    - generic [ref=e974]:
+                      - generic [ref=e976]: On Sale
+                      - button "Add to wishlist" [ref=e978] [cursor=pointer]:
+                        - img [ref=e979]
+                    - generic [ref=e981]:
+                      - link "Sony WH-1000XM6 Premium Noise Cancelling Over-Ear Headphones (Black) SONY Sony WH-1000XM6 Premium Noise Cancelling Over-Ear Headphones (Black) 4.3 (159)" [ref=e982] [cursor=pointer]:
+                        - /url: /products/sony-wh-1000xm6-premium-noise-cancelling-over-ear-headphones-black
+                        - generic [ref=e983]:
+                          - img "Sony WH-1000XM6 Premium Noise Cancelling Over-Ear Headphones (Black)" [ref=e985]
+                          - generic [ref=e986]:
+                            - img "SONY" [ref=e988]
+                            - generic [ref=e989]: Sony WH-1000XM6 Premium Noise Cancelling Over-Ear Headphones (Black)
+                            - button "4.3 (159)" [ref=e992]:
+                              - generic [ref=e993]:
+                                - generic [ref=e994]:
+                                  - img [ref=e995]
+                                  - img [ref=e997]
+                                  - img [ref=e999]
+                                  - img [ref=e1001]
+                                  - img [ref=e1003]
+                                - img [ref=e1005]
+                                - img [ref=e1007]
+                                - img [ref=e1009]
+                                - img [ref=e1011]
+                                - img [ref=e1013]
+                              - generic [ref=e1015]:
+                                - generic [ref=e1016]: "4.3"
+                                - generic [ref=e1017]: (159)
+                      - generic [ref=e1019]:
+                        - link "Ticket $698 $ 578 $ 120 OFF^" [ref=e1021] [cursor=pointer]:
+                          - /url: /products/sony-wh-1000xm6-premium-noise-cancelling-over-ear-headphones-black
+                          - generic [ref=e1022]:
+                            - generic [ref=e1025]:
+                              - generic [ref=e1026]: Ticket
+                              - generic [ref=e1028]:
+                                - img [ref=e1029]
+                                - text: $698
+                            - generic [ref=e1033]:
+                              - generic [ref=e1034]: $
+                              - generic [ref=e1035]: "578"
+                            - generic [ref=e1038]:
+                              - generic [ref=e1039]:
+                                - generic [ref=e1040]: $
+                                - generic [ref=e1041]: "120"
+                              - generic [ref=e1042]: OFF^
+                              - img [ref=e1043]
+                        - button "Add to cart Added" [ref=e1048] [cursor=pointer]:
+                          - generic [ref=e1049]: Add to cart
+                          - generic [ref=e1050]: Added
+                  - generic [ref=e1052]:
+                    - generic [ref=e1053]:
+                      - img [ref=e1055] [cursor=pointer]
+                      - generic [ref=e1057]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1058]:
+                        - button "Create account" [ref=e1059] [cursor=pointer]:
+                          - generic [ref=e1060]: Create account
+                        - button "Log in" [ref=e1061] [cursor=pointer]:
+                          - generic [ref=e1062]: Log in
+                    - generic [ref=e1063]:
+                      - generic [ref=e1065]: On Sale
+                      - button "Add to wishlist" [ref=e1067] [cursor=pointer]:
+                        - img [ref=e1068]
+                    - generic [ref=e1070]:
+                      - link "DJI Mini 5 Pro Drone Fly More Combo Plus (DJI RC2) DJI DJI Mini 5 Pro Drone Fly More Combo Plus (DJI RC2) 4.2 (5)" [ref=e1071] [cursor=pointer]:
+                        - /url: /products/dji-mini-5-pro-drone-fly-more-combo-plus-dji-rc2
+                        - generic [ref=e1072]:
+                          - img "DJI Mini 5 Pro Drone Fly More Combo Plus (DJI RC2)" [ref=e1074]
+                          - generic [ref=e1075]:
+                            - img "DJI" [ref=e1077]
+                            - generic [ref=e1078]: DJI Mini 5 Pro Drone Fly More Combo Plus (DJI RC2)
+                            - button "4.2 (5)" [ref=e1081]:
+                              - generic [ref=e1082]:
+                                - generic [ref=e1083]:
+                                  - img [ref=e1084]
+                                  - img [ref=e1086]
+                                  - img [ref=e1088]
+                                  - img [ref=e1090]
+                                  - img [ref=e1092]
+                                - img [ref=e1094]
+                                - img [ref=e1096]
+                                - img [ref=e1098]
+                                - img [ref=e1100]
+                                - img [ref=e1102]
+                              - generic [ref=e1104]:
+                                - generic [ref=e1105]: "4.2"
+                                - generic [ref=e1106]: (5)
+                      - generic [ref=e1108]:
+                        - link "Ticket $1799 $ 1619 $ 180 OFF^" [ref=e1110] [cursor=pointer]:
+                          - /url: /products/dji-mini-5-pro-drone-fly-more-combo-plus-dji-rc2
+                          - generic [ref=e1111]:
+                            - generic [ref=e1114]:
+                              - generic [ref=e1115]: Ticket
+                              - generic [ref=e1117]:
+                                - img [ref=e1118]
+                                - text: $1799
+                            - generic [ref=e1122]:
+                              - generic [ref=e1123]: $
+                              - generic [ref=e1124]: "1619"
+                            - generic [ref=e1127]:
+                              - generic [ref=e1128]:
+                                - generic [ref=e1129]: $
+                                - generic [ref=e1130]: "180"
+                              - generic [ref=e1131]: OFF^
+                              - img [ref=e1132]
+                        - button "Add to cart Added" [ref=e1137] [cursor=pointer]:
+                          - generic [ref=e1138]: Add to cart
+                          - generic [ref=e1139]: Added
+                  - generic [ref=e1141]:
+                    - generic [ref=e1142]:
+                      - img [ref=e1144] [cursor=pointer]
+                      - generic [ref=e1146]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1147]:
+                        - button "Create account" [ref=e1148] [cursor=pointer]:
+                          - generic [ref=e1149]: Create account
+                        - button "Log in" [ref=e1150] [cursor=pointer]:
+                          - generic [ref=e1151]: Log in
+                    - generic [ref=e1152]:
+                      - generic [ref=e1154]: On Sale
+                      - button "Add to wishlist" [ref=e1156] [cursor=pointer]:
+                        - img [ref=e1157]
+                    - generic [ref=e1159]:
+                      - link "Samsung 77\" S85H OLED 4K Smart AI TV [2026] SAMSUNG Samsung 77\" S85H OLED 4K Smart AI TV [2026] 4.8 (58)" [ref=e1160] [cursor=pointer]:
+                        - /url: /products/samsung-77-s85h-oled-4k-smart-ai-tv-2026
+                        - generic [ref=e1161]:
+                          - img "Samsung 77\" S85H OLED 4K Smart AI TV [2026]" [ref=e1163]
+                          - generic [ref=e1164]:
+                            - img "SAMSUNG" [ref=e1166]
+                            - generic [ref=e1167]: Samsung 77" S85H OLED 4K Smart AI TV [2026]
+                            - button "4.8 (58)" [ref=e1170]:
+                              - generic [ref=e1171]:
+                                - generic [ref=e1172]:
+                                  - img [ref=e1173]
+                                  - img [ref=e1175]
+                                  - img [ref=e1177]
+                                  - img [ref=e1179]
+                                  - img [ref=e1181]
+                                - img [ref=e1183]
+                                - img [ref=e1185]
+                                - img [ref=e1187]
+                                - img [ref=e1189]
+                                - img [ref=e1191]
+                              - generic [ref=e1193]:
+                                - generic [ref=e1194]: "4.8"
+                                - generic [ref=e1195]: (58)
+                      - generic [ref=e1197]:
+                        - link "Ticket $4495 $ 3470 $ 1025 OFF^" [ref=e1199] [cursor=pointer]:
+                          - /url: /products/samsung-77-s85h-oled-4k-smart-ai-tv-2026
+                          - generic [ref=e1200]:
+                            - generic [ref=e1203]:
+                              - generic [ref=e1204]: Ticket
+                              - generic [ref=e1206]:
+                                - img [ref=e1207]
+                                - text: $4495
+                            - generic [ref=e1211]:
+                              - generic [ref=e1212]: $
+                              - generic [ref=e1213]: "3470"
+                            - generic [ref=e1216]:
+                              - generic [ref=e1217]:
+                                - generic [ref=e1218]: $
+                                - generic [ref=e1219]: "1025"
+                              - generic [ref=e1220]: OFF^
+                              - img [ref=e1221]
+                        - button "Add to cart Added" [ref=e1226] [cursor=pointer]:
+                          - generic [ref=e1227]: Add to cart
+                          - generic [ref=e1228]: Added
+                  - generic [ref=e1230]:
+                    - generic [ref=e1231]:
+                      - img [ref=e1233] [cursor=pointer]
+                      - generic [ref=e1235]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1236]:
+                        - button "Create account" [ref=e1237] [cursor=pointer]:
+                          - generic [ref=e1238]: Create account
+                        - button "Log in" [ref=e1239] [cursor=pointer]:
+                          - generic [ref=e1240]: Log in
+                    - generic [ref=e1241]:
+                      - generic [ref=e1243]: On Sale
+                      - button "Add to wishlist" [ref=e1245] [cursor=pointer]:
+                        - img [ref=e1246]
+                    - generic [ref=e1248]:
+                      - link "Dreame L50s Pro Ultra Robot Vacuum Cleaner DREAME Dreame L50s Pro Ultra Robot Vacuum Cleaner 3.8 (4)" [ref=e1249] [cursor=pointer]:
+                        - /url: /products/dreame-l50s-pro-ultra-robot-vacuum-cleaner
+                        - generic [ref=e1250]:
+                          - img "Dreame L50s Pro Ultra Robot Vacuum Cleaner" [ref=e1252]
+                          - generic [ref=e1253]:
+                            - img "DREAME" [ref=e1255]
+                            - generic [ref=e1256]: Dreame L50s Pro Ultra Robot Vacuum Cleaner
+                            - button "3.8 (4)" [ref=e1259]:
+                              - generic [ref=e1260]:
+                                - generic [ref=e1261]:
+                                  - img [ref=e1262]
+                                  - img [ref=e1264]
+                                  - img [ref=e1266]
+                                  - img [ref=e1268]
+                                  - img [ref=e1270]
+                                - img [ref=e1272]
+                                - img [ref=e1274]
+                                - img [ref=e1276]
+                                - img [ref=e1278]
+                                - img [ref=e1280]
+                              - generic [ref=e1282]:
+                                - generic [ref=e1283]: "3.8"
+                                - generic [ref=e1284]: (4)
+                      - generic [ref=e1286]:
+                        - link "Ticket $2299 $ 1149 $ 1150 OFF^" [ref=e1288] [cursor=pointer]:
+                          - /url: /products/dreame-l50s-pro-ultra-robot-vacuum-cleaner
+                          - generic [ref=e1289]:
+                            - generic [ref=e1292]:
+                              - generic [ref=e1293]: Ticket
+                              - generic [ref=e1295]:
+                                - img [ref=e1296]
+                                - text: $2299
+                            - generic [ref=e1300]:
+                              - generic [ref=e1301]: $
+                              - generic [ref=e1302]: "1149"
+                            - generic [ref=e1305]:
+                              - generic [ref=e1306]:
+                                - generic [ref=e1307]: $
+                                - generic [ref=e1308]: "1150"
+                              - generic [ref=e1309]: OFF^
+                              - img [ref=e1310]
+                        - button "Add to cart Added" [ref=e1315] [cursor=pointer]:
+                          - generic [ref=e1316]: Add to cart
+                          - generic [ref=e1317]: Added
+                  - generic [ref=e1319]:
+                    - generic [ref=e1320]:
+                      - img [ref=e1322] [cursor=pointer]
+                      - generic [ref=e1324]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1325]:
+                        - button "Create account" [ref=e1326] [cursor=pointer]:
+                          - generic [ref=e1327]: Create account
+                        - button "Log in" [ref=e1328] [cursor=pointer]:
+                          - generic [ref=e1329]: Log in
+                    - generic [ref=e1330]:
+                      - generic [ref=e1332]: On Sale
+                      - button "Add to wishlist" [ref=e1334] [cursor=pointer]:
+                        - img [ref=e1335]
+                    - generic [ref=e1337]:
+                      - link "Garmin Forerunner® 265 Sports Watch (Black) GARMIN Garmin Forerunner® 265 Sports Watch (Black) 5.0 (1)" [ref=e1338] [cursor=pointer]:
+                        - /url: /products/garmin-forerunner-265-sports-watch-black
+                        - generic [ref=e1339]:
+                          - img "Garmin Forerunner® 265 Sports Watch (Black)" [ref=e1341]
+                          - generic [ref=e1342]:
+                            - img "GARMIN" [ref=e1344]
+                            - generic [ref=e1345]: Garmin Forerunner® 265 Sports Watch (Black)
+                            - button "5.0 (1)" [ref=e1348]:
+                              - generic [ref=e1349]:
+                                - generic [ref=e1350]:
+                                  - img [ref=e1351]
+                                  - img [ref=e1353]
+                                  - img [ref=e1355]
+                                  - img [ref=e1357]
+                                  - img [ref=e1359]
+                                - img [ref=e1361]
+                                - img [ref=e1363]
+                                - img [ref=e1365]
+                                - img [ref=e1367]
+                                - img [ref=e1369]
+                              - generic [ref=e1371]:
+                                - generic [ref=e1372]: "5.0"
+                                - generic [ref=e1373]: (1)
+                      - generic [ref=e1375]:
+                        - link "Ticket $799 $ 499 $ 300 OFF^" [ref=e1377] [cursor=pointer]:
+                          - /url: /products/garmin-forerunner-265-sports-watch-black
+                          - generic [ref=e1378]:
+                            - generic [ref=e1381]:
+                              - generic [ref=e1382]: Ticket
+                              - generic [ref=e1384]:
+                                - img [ref=e1385]
+                                - text: $799
+                            - generic [ref=e1389]:
+                              - generic [ref=e1390]: $
+                              - generic [ref=e1391]: "499"
+                            - generic [ref=e1394]:
+                              - generic [ref=e1395]:
+                                - generic [ref=e1396]: $
+                                - generic [ref=e1397]: "300"
+                              - generic [ref=e1398]: OFF^
+                              - img [ref=e1399]
+                        - button "Add to cart Added" [ref=e1404] [cursor=pointer]:
+                          - generic [ref=e1405]: Add to cart
+                          - generic [ref=e1406]: Added
+                  - generic [ref=e1408]:
+                    - generic [ref=e1409]:
+                      - img [ref=e1411] [cursor=pointer]
+                      - generic [ref=e1413]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1414]:
+                        - button "Create account" [ref=e1415] [cursor=pointer]:
+                          - generic [ref=e1416]: Create account
+                        - button "Log in" [ref=e1417] [cursor=pointer]:
+                          - generic [ref=e1418]: Log in
+                    - generic [ref=e1419]:
+                      - generic [ref=e1421]: On Sale
+                      - button "Add to wishlist" [ref=e1423] [cursor=pointer]:
+                        - img [ref=e1424]
+                    - generic [ref=e1426]:
+                      - link "Dyson V8 Cyclone DYSON Dyson V8 Cyclone 4.5 (486)" [ref=e1427] [cursor=pointer]:
+                        - /url: /products/dyson-v8-cyclone
+                        - generic [ref=e1428]:
+                          - img "Dyson V8 Cyclone" [ref=e1430]
+                          - generic [ref=e1431]:
+                            - img "DYSON" [ref=e1433]
+                            - generic [ref=e1434]: Dyson V8 Cyclone
+                            - button "4.5 (486)" [ref=e1437]:
+                              - generic [ref=e1438]:
+                                - generic [ref=e1439]:
+                                  - img [ref=e1440]
+                                  - img [ref=e1442]
+                                  - img [ref=e1444]
+                                  - img [ref=e1446]
+                                  - img [ref=e1448]
+                                - img [ref=e1450]
+                                - img [ref=e1452]
+                                - img [ref=e1454]
+                                - img [ref=e1456]
+                                - img [ref=e1458]
+                              - generic [ref=e1460]:
+                                - generic [ref=e1461]: "4.5"
+                                - generic [ref=e1462]: (486)
+                      - generic [ref=e1464]:
+                        - link "Ticket $649 $ 499 $ 150 OFF^" [ref=e1466] [cursor=pointer]:
+                          - /url: /products/dyson-v8-cyclone
+                          - generic [ref=e1467]:
+                            - generic [ref=e1470]:
+                              - generic [ref=e1471]: Ticket
+                              - generic [ref=e1473]:
+                                - img [ref=e1474]
+                                - text: $649
+                            - generic [ref=e1478]:
+                              - generic [ref=e1479]: $
+                              - generic [ref=e1480]: "499"
+                            - generic [ref=e1483]:
+                              - generic [ref=e1484]:
+                                - generic [ref=e1485]: $
+                                - generic [ref=e1486]: "150"
+                              - generic [ref=e1487]: OFF^
+                              - img [ref=e1488]
+                        - button "Add to cart Added" [ref=e1493] [cursor=pointer]:
+                          - generic [ref=e1494]: Add to cart
+                          - generic [ref=e1495]: Added
+                  - generic [ref=e1497]:
+                    - generic [ref=e1498]:
+                      - img [ref=e1500] [cursor=pointer]
+                      - generic [ref=e1502]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1503]:
+                        - button "Create account" [ref=e1504] [cursor=pointer]:
+                          - generic [ref=e1505]: Create account
+                        - button "Log in" [ref=e1506] [cursor=pointer]:
+                          - generic [ref=e1507]: Log in
+                    - button "Add to wishlist" [ref=e1510] [cursor=pointer]:
+                      - img [ref=e1511]
+                    - generic [ref=e1513]:
+                      - link "Asus VivoBook 15.6\" Full HD Thin & Light Laptop (Intel Core 5)[1TB] ASUS Asus VivoBook 15.6\" Full HD Thin & Light Laptop (Intel Core 5)[1TB] 1.3 (6)" [ref=e1514] [cursor=pointer]:
+                        - /url: /products/asus-vivobook-15-6-full-hd-thin-light-laptop-intel-core-51tb
+                        - generic [ref=e1515]:
+                          - img "Asus VivoBook 15.6\" Full HD Thin & Light Laptop (Intel Core 5)[1TB]" [ref=e1517]
+                          - generic [ref=e1518]:
+                            - img "ASUS" [ref=e1520]
+                            - generic [ref=e1521]: Asus VivoBook 15.6" Full HD Thin & Light Laptop (Intel Core 5)[1TB]
+                            - button "1.3 (6)" [ref=e1524]:
+                              - generic [ref=e1525]:
+                                - generic [ref=e1526]:
+                                  - img [ref=e1527]
+                                  - img [ref=e1529]
+                                  - img [ref=e1531]
+                                  - img [ref=e1533]
+                                  - img [ref=e1535]
+                                - img [ref=e1537]
+                                - img [ref=e1539]
+                                - img [ref=e1541]
+                                - img [ref=e1543]
+                                - img [ref=e1545]
+                              - generic [ref=e1547]:
+                                - generic [ref=e1548]: "1.3"
+                                - generic [ref=e1549]: (6)
+                      - generic [ref=e1551]:
+                        - link "Red Hot Deal $ 899" [ref=e1553] [cursor=pointer]:
+                          - /url: /products/asus-vivobook-15-6-full-hd-thin-light-laptop-intel-core-51tb
+                          - generic [ref=e1554]:
+                            - generic [ref=e1557]: Red Hot Deal
+                            - generic [ref=e1560]:
+                              - generic [ref=e1561]: $
+                              - generic [ref=e1562]: "899"
+                        - button "Add to cart Added" [ref=e1565] [cursor=pointer]:
+                          - generic [ref=e1566]: Add to cart
+                          - generic [ref=e1567]: Added
+                  - generic [ref=e1569]:
+                    - generic [ref=e1570]:
+                      - img [ref=e1572] [cursor=pointer]
+                      - generic [ref=e1574]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1575]:
+                        - button "Create account" [ref=e1576] [cursor=pointer]:
+                          - generic [ref=e1577]: Create account
+                        - button "Log in" [ref=e1578] [cursor=pointer]:
+                          - generic [ref=e1579]: Log in
+                    - generic [ref=e1580]:
+                      - generic [ref=e1582]: On Sale
+                      - button "Add to wishlist" [ref=e1584] [cursor=pointer]:
+                        - img [ref=e1585]
+                    - generic [ref=e1587]:
+                      - link "Ninja SLUSHI Professional Frozen Drink Maker NINJA Ninja SLUSHI Professional Frozen Drink Maker 4.0 (74)" [ref=e1588] [cursor=pointer]:
+                        - /url: /products/ninja-slushi-professional-frozen-drink-maker
+                        - generic [ref=e1589]:
+                          - img "Ninja SLUSHI Professional Frozen Drink Maker" [ref=e1591]
+                          - generic [ref=e1592]:
+                            - img "NINJA" [ref=e1594]
+                            - generic [ref=e1595]: Ninja SLUSHI Professional Frozen Drink Maker
+                            - button "4.0 (74)" [ref=e1598]:
+                              - generic [ref=e1599]:
+                                - generic [ref=e1600]:
+                                  - img [ref=e1601]
+                                  - img [ref=e1603]
+                                  - img [ref=e1605]
+                                  - img [ref=e1607]
+                                  - img [ref=e1609]
+                                - img [ref=e1611]
+                                - img [ref=e1613]
+                                - img [ref=e1615]
+                                - img [ref=e1617]
+                                - img [ref=e1619]
+                              - generic [ref=e1621]:
+                                - generic [ref=e1622]: "4.0"
+                                - generic [ref=e1623]: (74)
+                      - generic [ref=e1625]:
+                        - link "Ticket $479 $ 349 $ 130 OFF^" [ref=e1627] [cursor=pointer]:
+                          - /url: /products/ninja-slushi-professional-frozen-drink-maker
+                          - generic [ref=e1628]:
+                            - generic [ref=e1631]:
+                              - generic [ref=e1632]: Ticket
+                              - generic [ref=e1634]:
+                                - img [ref=e1635]
+                                - text: $479
+                            - generic [ref=e1639]:
+                              - generic [ref=e1640]: $
+                              - generic [ref=e1641]: "349"
+                            - generic [ref=e1644]:
+                              - generic [ref=e1645]:
+                                - generic [ref=e1646]: $
+                                - generic [ref=e1647]: "130"
+                              - generic [ref=e1648]: OFF^
+                              - img [ref=e1649]
+                        - button "Add to cart Added" [ref=e1654] [cursor=pointer]:
+                          - generic [ref=e1655]: Add to cart
+                          - generic [ref=e1656]: Added
+                  - generic [ref=e1658]:
+                    - generic [ref=e1659]:
+                      - img [ref=e1661] [cursor=pointer]
+                      - generic [ref=e1663]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1664]:
+                        - button "Create account" [ref=e1665] [cursor=pointer]:
+                          - generic [ref=e1666]: Create account
+                        - button "Log in" [ref=e1667] [cursor=pointer]:
+                          - generic [ref=e1668]: Log in
+                    - generic [ref=e1669]:
+                      - generic [ref=e1671]: On Sale
+                      - button "Add to wishlist" [ref=e1673] [cursor=pointer]:
+                        - img [ref=e1674]
+                    - generic [ref=e1676]:
+                      - link "Samsung Galaxy Tab A11+ 11\" Wi-Fi 128GB (Grey) SAMSUNG S9 Samsung Galaxy Tab A11+ 11\" Wi-Fi 128GB (Grey) 4.1 (21)" [ref=e1677] [cursor=pointer]:
+                        - /url: /products/samsung-galaxy-tab-a11-11-wi-fi-128gb-grey
+                        - generic [ref=e1678]:
+                          - img "Samsung Galaxy Tab A11+ 11\" Wi-Fi 128GB (Grey)" [ref=e1680]
+                          - generic [ref=e1681]:
+                            - img "SAMSUNG S9" [ref=e1683]
+                            - generic [ref=e1684]: Samsung Galaxy Tab A11+ 11" Wi-Fi 128GB (Grey)
+                            - button "4.1 (21)" [ref=e1687]:
+                              - generic [ref=e1688]:
+                                - generic [ref=e1689]:
+                                  - img [ref=e1690]
+                                  - img [ref=e1692]
+                                  - img [ref=e1694]
+                                  - img [ref=e1696]
+                                  - img [ref=e1698]
+                                - img [ref=e1700]
+                                - img [ref=e1702]
+                                - img [ref=e1704]
+                                - img [ref=e1706]
+                                - img [ref=e1708]
+                              - generic [ref=e1710]:
+                                - generic [ref=e1711]: "4.1"
+                                - generic [ref=e1712]: (21)
+                      - generic [ref=e1714]:
+                        - link "Ticket $479 $ 399 $ 80 OFF^" [ref=e1716] [cursor=pointer]:
+                          - /url: /products/samsung-galaxy-tab-a11-11-wi-fi-128gb-grey
+                          - generic [ref=e1717]:
+                            - generic [ref=e1720]:
+                              - generic [ref=e1721]: Ticket
+                              - generic [ref=e1723]:
+                                - img [ref=e1724]
+                                - text: $479
+                            - generic [ref=e1728]:
+                              - generic [ref=e1729]: $
+                              - generic [ref=e1730]: "399"
+                            - generic [ref=e1733]:
+                              - generic [ref=e1734]:
+                                - generic [ref=e1735]: $
+                                - generic [ref=e1736]: "80"
+                              - generic [ref=e1737]: OFF^
+                              - img [ref=e1738]
+                        - button "Add to cart Added" [ref=e1743] [cursor=pointer]:
+                          - generic [ref=e1744]: Add to cart
+                          - generic [ref=e1745]: Added
+                  - generic [ref=e1747]:
+                    - generic [ref=e1748]:
+                      - img [ref=e1750] [cursor=pointer]
+                      - generic [ref=e1752]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1753]:
+                        - button "Create account" [ref=e1754] [cursor=pointer]:
+                          - generic [ref=e1755]: Create account
+                        - button "Log in" [ref=e1756] [cursor=pointer]:
+                          - generic [ref=e1757]: Log in
+                    - generic [ref=e1758]:
+                      - generic [ref=e1760]: On Sale
+                      - button "Add to wishlist" [ref=e1762] [cursor=pointer]:
+                        - img [ref=e1763]
+                    - generic [ref=e1765]:
+                      - link "LG 65\" OLED EVO AI C6 4K Smart TV [2026] LG LG 65\" OLED EVO AI C6 4K Smart TV [2026] 4.7 (35)" [ref=e1766] [cursor=pointer]:
+                        - /url: /products/lg-65-oled-evo-ai-c6-4k-smart-tv-2026
+                        - generic [ref=e1767]:
+                          - img "LG 65\" OLED EVO AI C6 4K Smart TV [2026]" [ref=e1769]
+                          - generic [ref=e1770]:
+                            - img "LG" [ref=e1772]
+                            - generic [ref=e1773]: LG 65" OLED EVO AI C6 4K Smart TV [2026]
+                            - button "4.7 (35)" [ref=e1776]:
+                              - generic [ref=e1777]:
+                                - generic [ref=e1778]:
+                                  - img [ref=e1779]
+                                  - img [ref=e1781]
+                                  - img [ref=e1783]
+                                  - img [ref=e1785]
+                                  - img [ref=e1787]
+                                - img [ref=e1789]
+                                - img [ref=e1791]
+                                - img [ref=e1793]
+                                - img [ref=e1795]
+                                - img [ref=e1797]
+                              - generic [ref=e1799]:
+                                - generic [ref=e1800]: "4.7"
+                                - generic [ref=e1801]: (35)
+                      - generic [ref=e1803]:
+                        - link "Ticket $3995 $ 3266 $ 729 OFF^" [ref=e1805] [cursor=pointer]:
+                          - /url: /products/lg-65-oled-evo-ai-c6-4k-smart-tv-2026
+                          - generic [ref=e1806]:
+                            - generic [ref=e1809]:
+                              - generic [ref=e1810]: Ticket
+                              - generic [ref=e1812]:
+                                - img [ref=e1813]
+                                - text: $3995
+                            - generic [ref=e1817]:
+                              - generic [ref=e1818]: $
+                              - generic [ref=e1819]: "3266"
+                            - generic [ref=e1822]:
+                              - generic [ref=e1823]:
+                                - generic [ref=e1824]: $
+                                - generic [ref=e1825]: "729"
+                              - generic [ref=e1826]: OFF^
+                              - img [ref=e1827]
+                        - button "Add to cart Added" [ref=e1832] [cursor=pointer]:
+                          - generic [ref=e1833]: Add to cart
+                          - generic [ref=e1834]: Added
+                  - generic [ref=e1836]:
+                    - generic [ref=e1837]:
+                      - img [ref=e1839] [cursor=pointer]
+                      - generic [ref=e1841]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1842]:
+                        - button "Create account" [ref=e1843] [cursor=pointer]:
+                          - generic [ref=e1844]: Create account
+                        - button "Log in" [ref=e1845] [cursor=pointer]:
+                          - generic [ref=e1846]: Log in
+                    - generic [ref=e1847]:
+                      - generic [ref=e1849]: On Sale
+                      - button "Add to wishlist" [ref=e1851] [cursor=pointer]:
+                        - img [ref=e1852]
+                    - generic [ref=e1854]:
+                      - link "Samsung Galaxy S26 Ultra 5G 256GB (Sky Blue) SAMSUNG Samsung Galaxy S26 Ultra 5G 256GB (Sky Blue) 4.8 (2854)" [ref=e1855] [cursor=pointer]:
+                        - /url: /products/samsung-galaxy-s26-ultra-5g-256gb-sky-blue
+                        - generic [ref=e1856]:
+                          - img "Samsung Galaxy S26 Ultra 5G 256GB (Sky Blue)" [ref=e1858]
+                          - generic [ref=e1859]:
+                            - img "SAMSUNG" [ref=e1861]
+                            - generic [ref=e1862]: Samsung Galaxy S26 Ultra 5G 256GB (Sky Blue)
+                            - button "4.8 (2854)" [ref=e1865]:
+                              - generic [ref=e1866]:
+                                - generic [ref=e1867]:
+                                  - img [ref=e1868]
+                                  - img [ref=e1870]
+                                  - img [ref=e1872]
+                                  - img [ref=e1874]
+                                  - img [ref=e1876]
+                                - img [ref=e1878]
+                                - img [ref=e1880]
+                                - img [ref=e1882]
+                                - img [ref=e1884]
+                                - img [ref=e1886]
+                              - generic [ref=e1888]:
+                                - generic [ref=e1889]: "4.8"
+                                - generic [ref=e1890]: (2854)
+                      - generic [ref=e1892]:
+                        - link "Ticket $2199 $ 1699 $ 500 OFF^" [ref=e1894] [cursor=pointer]:
+                          - /url: /products/samsung-galaxy-s26-ultra-5g-256gb-sky-blue
+                          - generic [ref=e1895]:
+                            - generic [ref=e1898]:
+                              - generic [ref=e1899]: Ticket
+                              - generic [ref=e1901]:
+                                - img [ref=e1902]
+                                - text: $2199
+                            - generic [ref=e1906]:
+                              - generic [ref=e1907]: $
+                              - generic [ref=e1908]: "1699"
+                            - generic [ref=e1911]:
+                              - generic [ref=e1912]:
+                                - generic [ref=e1913]: $
+                                - generic [ref=e1914]: "500"
+                              - generic [ref=e1915]: OFF^
+                              - img [ref=e1916]
+                        - button "Add to cart Added" [ref=e1921] [cursor=pointer]:
+                          - generic [ref=e1922]: Add to cart
+                          - generic [ref=e1923]: Added
+                  - generic [ref=e1925]:
+                    - generic [ref=e1926]:
+                      - img [ref=e1928] [cursor=pointer]
+                      - generic [ref=e1930]: You're one step away from having this in your wishlist!
+                      - generic [ref=e1931]:
+                        - button "Create account" [ref=e1932] [cursor=pointer]:
+                          - generic [ref=e1933]: Create account
+                        - button "Log in" [ref=e1934] [cursor=pointer]:
+                          - generic [ref=e1935]: Log in
+                    - button "Add to wishlist" [ref=e1938] [cursor=pointer]:
+                      - img [ref=e1939]
+                    - generic [ref=e1941]:
+                      - link "Hisense 65\" Q6SAU 4K Hi-QLED Smart TV [2026] HISENSE Hisense 65\" Q6SAU 4K Hi-QLED Smart TV [2026] 4.0 (14)" [ref=e1942] [cursor=pointer]:
+                        - /url: /products/hisense-65-q6sau-4k-hi-qled-smart-tv-2026
+                        - generic [ref=e1943]:
+                          - img "Hisense 65\" Q6SAU 4K Hi-QLED Smart TV [2026]" [ref=e1945]
+                          - generic [ref=e1946]:
+                            - img "HISENSE" [ref=e1948]
+                            - generic [ref=e1949]: Hisense 65" Q6SAU 4K Hi-QLED Smart TV [2026]
+                            - button "4.0 (14)" [ref=e1952]:
+                              - generic [ref=e1953]:
+                                - generic [ref=e1954]:
+                                  - img [ref=e1955]
+                                  - img [ref=e1957]
+                                  - img [ref=e1959]
+                                  - img [ref=e1961]
+                                  - img [ref=e1963]
+                                - img [ref=e1965]
+                                - img [ref=e1967]
+                                - img [ref=e1969]
+                                - img [ref=e1971]
+                                - img [ref=e1973]
+                              - generic [ref=e1975]:
+                                - generic [ref=e1976]: "4.0"
+                                - generic [ref=e1977]: (14)
+                      - generic [ref=e1979]:
+                        - link "Red Hot Deal $ 995" [ref=e1981] [cursor=pointer]:
+                          - /url: /products/hisense-65-q6sau-4k-hi-qled-smart-tv-2026
+                          - generic [ref=e1982]:
+                            - generic [ref=e1985]: Red Hot Deal
+                            - generic [ref=e1988]:
+                              - generic [ref=e1989]: $
+                              - generic [ref=e1990]: "995"
+                        - button "Add to cart Added" [ref=e1993] [cursor=pointer]:
+                          - generic [ref=e1994]: Add to cart
+                          - generic [ref=e1995]: Added
+                  - generic [ref=e1997]:
+                    - generic [ref=e1998]:
+                      - img [ref=e2000] [cursor=pointer]
+                      - generic [ref=e2002]: You're one step away from having this in your wishlist!
+                      - generic [ref=e2003]:
+                        - button "Create account" [ref=e2004] [cursor=pointer]:
+                          - generic [ref=e2005]: Create account
+                        - button "Log in" [ref=e2006] [cursor=pointer]:
+                          - generic [ref=e2007]: Log in
+                    - generic [ref=e2008]:
+                      - generic [ref=e2010]: On Sale
+                      - button "Add to wishlist" [ref=e2012] [cursor=pointer]:
+                        - img [ref=e2013]
+                    - generic [ref=e2015]:
+                      - link "Asus TUF Gaming A15 15.6\" WUXGA Gaming Laptop (Ryzen 7 - 170)[GeForce RTX 3050] ASUS Asus TUF Gaming A15 15.6\" WUXGA Gaming Laptop (Ryzen 7 - 170)[GeForce RTX 3050] 4.5 (4)" [ref=e2016] [cursor=pointer]:
+                        - /url: /products/asus-tuf-gaming-a15-15-6-wuxga-gaming-laptop-ryzen-7-170geforce-rtx-3050
+                        - generic [ref=e2017]:
+                          - img "Asus TUF Gaming A15 15.6\" WUXGA Gaming Laptop (Ryzen 7 - 170)[GeForce RTX 3050]" [ref=e2019]
+                          - generic [ref=e2020]:
+                            - img "ASUS" [ref=e2022]
+                            - generic [ref=e2023]: Asus TUF Gaming A15 15.6" WUXGA Gaming Laptop (Ryzen 7 - 170)[GeForce RTX 3050]
+                            - button "4.5 (4)" [ref=e2026]:
+                              - generic [ref=e2027]:
+                                - generic [ref=e2028]:
+                                  - img [ref=e2029]
+                                  - img [ref=e2031]
+                                  - img [ref=e2033]
+                                  - img [ref=e2035]
+                                  - img [ref=e2037]
+                                - img [ref=e2039]
+                                - img [ref=e2041]
+                                - img [ref=e2043]
+                                - img [ref=e2045]
+                                - img [ref=e2047]
+                              - generic [ref=e2049]:
+                                - generic [ref=e2050]: "4.5"
+                                - generic [ref=e2051]: (4)
+                      - generic [ref=e2053]:
+                        - link "Ticket $2399 $ 1559 $ 840 OFF^" [ref=e2055] [cursor=pointer]:
+                          - /url: /products/asus-tuf-gaming-a15-15-6-wuxga-gaming-laptop-ryzen-7-170geforce-rtx-3050
+                          - generic [ref=e2056]:
+                            - generic [ref=e2059]:
+                              - generic [ref=e2060]: Ticket
+                              - generic [ref=e2062]:
+                                - img [ref=e2063]
+                                - text: $2399
+                            - generic [ref=e2067]:
+                              - generic [ref=e2068]: $
+                              - generic [ref=e2069]: "1559"
+                            - generic [ref=e2072]:
+                              - generic [ref=e2073]:
+                                - generic [ref=e2074]: $
+                                - generic [ref=e2075]: "840"
+                              - generic [ref=e2076]: OFF^
+                              - img [ref=e2077]
+                        - button "Add to cart Added" [ref=e2082] [cursor=pointer]:
+                          - generic [ref=e2083]: Add to cart
+                          - generic [ref=e2084]: Added
+                  - generic [ref=e2086]:
+                    - generic [ref=e2087]:
+                      - img [ref=e2089] [cursor=pointer]
+                      - generic [ref=e2091]: You're one step away from having this in your wishlist!
+                      - generic [ref=e2092]:
+                        - button "Create account" [ref=e2093] [cursor=pointer]:
+                          - generic [ref=e2094]: Create account
+                        - button "Log in" [ref=e2095] [cursor=pointer]:
+                          - generic [ref=e2096]: Log in
+                    - generic [ref=e2097]:
+                      - generic [ref=e2099]: On Sale
+                      - button "Add to wishlist" [ref=e2101] [cursor=pointer]:
+                        - img [ref=e2102]
+                    - generic [ref=e2104]:
+                      - link "Samsung Galaxy Watch8 40mm (Graphite) SAMSUNG Samsung Galaxy Watch8 40mm (Graphite) 4.5 (122)" [ref=e2105] [cursor=pointer]:
+                        - /url: /products/samsung-galaxy-watch8-40mm-graphite
+                        - generic [ref=e2106]:
+                          - img "Samsung Galaxy Watch8 40mm (Graphite)" [ref=e2108]
+                          - generic [ref=e2109]:
+                            - img "SAMSUNG" [ref=e2111]
+                            - generic [ref=e2112]: Samsung Galaxy Watch8 40mm (Graphite)
+                            - button "4.5 (122)" [ref=e2115]:
+                              - generic [ref=e2116]:
+                                - generic [ref=e2117]:
+                                  - img [ref=e2118]
+                                  - img [ref=e2120]
+                                  - img [ref=e2122]
+                                  - img [ref=e2124]
+                                  - img [ref=e2126]
+                                - img [ref=e2128]
+                                - img [ref=e2130]
+                                - img [ref=e2132]
+                                - img [ref=e2134]
+                                - img [ref=e2136]
+                              - generic [ref=e2138]:
+                                - generic [ref=e2139]: "4.5"
+                                - generic [ref=e2140]: (122)
+                      - generic [ref=e2142]:
+                        - link "Ticket $649 $ 324 $ 325 OFF^" [ref=e2144] [cursor=pointer]:
+                          - /url: /products/samsung-galaxy-watch8-40mm-graphite
+                          - generic [ref=e2145]:
+                            - generic [ref=e2148]:
+                              - generic [ref=e2149]: Ticket
+                              - generic [ref=e2151]:
+                                - img [ref=e2152]
+                                - text: $649
+                            - generic [ref=e2156]:
+                              - generic [ref=e2157]: $
+                              - generic [ref=e2158]: "324"
+                            - generic [ref=e2161]:
+                              - generic [ref=e2162]:
+                                - generic [ref=e2163]: $
+                                - generic [ref=e2164]: "325"
+                              - generic [ref=e2165]: OFF^
+                              - img [ref=e2166]
+                        - button "Add to cart Added" [ref=e2171] [cursor=pointer]:
+                          - generic [ref=e2172]: Add to cart
+                          - generic [ref=e2173]: Added
+                - img [ref=e2177] [cursor=pointer]
+                - img [ref=e2180] [cursor=pointer]
+            - link "View all" [ref=e2184] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/collections/this-weeks-hottest-deals
+              - img [ref=e2185]
+              - generic [ref=e2188]: View all
+      - generic [ref=e2192]:
+        - generic [ref=e2193]: Seen it cheaper?
+        - generic [ref=e2195]:
+          - generic [ref=e2196]: Ask for a JB Deal!
+          - paragraph [ref=e2197]: Instore | Online
+        - paragraph [ref=e2200]: Excludes JB Hi-Fi Marketplace products
+        - generic [ref=e2201]:
+          - button "Live chat" [ref=e2202] [cursor=pointer]:
+            - img [ref=e2204]
+            - text: Live chat
+          - button "Call 13 52 44" [ref=e2206] [cursor=pointer]:
+            - img [ref=e2208]
+            - text: Call 13 52 44
+          - generic [ref=e2210]: 11pm – 10am (UTC)
+      - generic [ref=e2213]:
+        - heading "What's trending" [level=3] [ref=e2215]
+        - generic [ref=e2218]:
+          - generic [ref=e2220]:
+            - generic [ref=e2222]:
+              - link "Promo Card" [ref=e2223] [cursor=pointer]:
+                - /url: https://catalogue.jbhifi.com.au/2026/09/24-09-ffr/index.html
+              - img "jb-au-20260924-footy-finals-frenzy-promo-card" [ref=e2226]
+            - generic [ref=e2228]:
+              - link "Promo Card" [ref=e2229] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/40-off-deals
+              - img "jb-au-20260924-40-po-deals-promo-card" [ref=e2232]
+            - generic [ref=e2234]:
+              - link "Promo Card" [ref=e2235] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/hot-deals-on-audio
+              - img "jb-au-20260924-Home-Appliance-Frenzy-promo-card-1" [ref=e2238]
+            - generic [ref=e2240]:
+              - link "Promo Card" [ref=e2241] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/hot-deals-on-mobile-phones?Price%5Bmax%5D=1000
+              - img "jb-au-20260924-phones-under-1000-promo-card" [ref=e2244]
+            - generic [ref=e2246]:
+              - link "Promo Card" [ref=e2247] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/computers-tablets/laptops?Price%5Bmax%5D=1000
+              - img "jb-au-20260924-computers-under-1000-promo-card" [ref=e2250]
+            - generic [ref=e2252]:
+              - link "Promo Card" [ref=e2253] [cursor=pointer]:
+                - /url: https://catalogue.jbhifi.com.au/2026/09/24-09-gam/index.html
+              - img "jb-au-20260924-gaming-cat-promo-card" [ref=e2256]
+            - generic [ref=e2258]:
+              - link "Promo Card" [ref=e2259] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/mega-gaming-sale
+              - img "jb-au-20260924-get-game-ready-promo-card" [ref=e2262]
+            - generic [ref=e2264]:
+              - link "Promo Card" [ref=e2265] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/hot-deals-on-home-appliances
+              - img "jb-au-20260924-Home-Appliance-Frenzy-promo-card" [ref=e2268]
+            - generic [ref=e2270]:
+              - link "Promo Card" [ref=e2271] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/home-appliances/cleaning
+              - img "jb-au-20260924-spring-clean-deals-promo-card" [ref=e2274]
+            - generic [ref=e2276]:
+              - link "Promo Card" [ref=e2277] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/pokemon-gotta-catch-em-all
+              - img "jb-au-20260909-pokerman-promo-card" [ref=e2280]
+            - generic [ref=e2282]:
+              - link "Promo Card" [ref=e2283] [cursor=pointer]:
+                - /url: https://catalogue.jbhifi.com.au/2026/09/17-09-eea/index.html
+              - img "jb-au-20260917-ee-cat-promo-card" [ref=e2286]
+          - img [ref=e2290] [cursor=pointer]
+          - img [ref=e2293] [cursor=pointer]
+      - generic [ref=e2297]:
+        - link "Hero Banner" [ref=e2298] [cursor=pointer]:
+          - /url: https://support.jbhifi.com.au/hc/en-au/articles/5644090872719-How-do-Uber-deliveries-work-
+        - img "uber-delivery-leader-dt (1)" [ref=e2299]
+      - generic [ref=e2302]:
+        - heading "refurbished tech" [level=3] [ref=e2305]
+        - generic [ref=e2307]:
+          - generic [ref=e2311]:
+            - button "Refurbished Tech" [ref=e2314] [cursor=pointer]
+            - button "Refurbished Phones" [ref=e2317] [cursor=pointer]
+            - button "Refurbished Laptops" [ref=e2320] [cursor=pointer]
+            - button "Refurbished Tablets" [ref=e2323] [cursor=pointer]
+            - button "Refurbished Smart Watches" [ref=e2326] [cursor=pointer]
+          - generic [ref=e2328]:
+            - link "View all" [ref=e2329] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/collections/refurbished-tech
+              - text: View all
+              - img [ref=e2330]
+            - generic [ref=e2332]:
+              - img "Mobile-Refurbished-tile-dt" [ref=e2334]
+              - generic [ref=e2335]:
+                - heading "Refurbished Tech" [level=1] [ref=e2337]
+                - paragraph [ref=e2338]: Want the same great tech, with a smaller price tag? Check out our range!
+                - link "View all" [ref=e2341] [cursor=pointer]:
+                  - /url: https://www.jbhifi.com.au/collections/refurbished-tech
+                  - img [ref=e2342]
+                  - generic [ref=e2345]: View all
+              - img [ref=e2523] [cursor=pointer]
+      - generic [ref=e2528]:
+        - generic [ref=e2530]:
+          - heading "New at JB!" [level=2] [ref=e2532]: New at JB!
+          - link "Explore New" [ref=e2534] [cursor=pointer]:
+            - /url: https://www.jbhifi.com.au/blogs/new-at-jb
+            - generic [ref=e2535]: Explore New
+        - generic [ref=e2536]:
+          - generic [ref=e2543]:
+            - generic [ref=e2545]:
+              - link "Promo Card" [ref=e2546] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/health-fitness-wearables/smart-eyewear?sortBy=published_at_desc
+              - generic [ref=e2547]:
+                - img "image" [ref=e2549]
+                - generic [ref=e2551]:
+                  - generic [ref=e2552]: Meet the next generation of AI glasses!
+                  - link "Shop now" [ref=e2554] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/health-fitness-wearables/smart-eyewear?sortBy=published_at_desc
+            - generic [ref=e2556]:
+              - generic "Promo Card" [ref=e2557]
+              - generic [ref=e2558]:
+                - button "Play" [ref=e2566] [cursor=pointer]:
+                  - generic [ref=e2567]: Play
+                - generic [ref=e2569]:
+                  - generic [ref=e2570]: Mix and match your style with Beats!
+                  - link "Shop now" [ref=e2572] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/headphones-speakers-audio/new-headphones-speakers-audio?sortBy=published_at_desc&Brand=BEATS
+            - generic [ref=e2574]:
+              - generic "Promo Card" [ref=e2575]
+              - generic [ref=e2576]:
+                - button "Play" [ref=e2584] [cursor=pointer]:
+                  - generic [ref=e2585]: Play
+                - generic [ref=e2586]:
+                  - img [ref=e2587]
+                  - generic [ref=e2597]:
+                    - generic [ref=e2598]: Bring serious gaming muscle on the move!
+                    - link "Shop now" [ref=e2600] [cursor=pointer]:
+                      - /url: https://www.jbhifi.com.au/products/hyperx-omen-16-wqxga-165hz-gaming-laptop-intel-core-ultra-9-290hx-plusgeforce-rtx-5060
+            - generic [ref=e2602]:
+              - generic "Promo Card" [ref=e2603]
+              - generic [ref=e2604]:
+                - button "Play" [ref=e2612] [cursor=pointer]:
+                  - generic [ref=e2613]: Play
+                - generic [ref=e2614]:
+                  - img [ref=e2615]
+                  - generic [ref=e2617]:
+                    - generic [ref=e2618]: Three new additions to their PRO lineup & more!
+                    - link "Shop now" [ref=e2620] [cursor=pointer]:
+                      - /url: https://www.jbhifi.com.au/collections/games-consoles/gaming-accessories?sortBy=published_at_desc&Brand=LOGITECH-G
+            - generic [ref=e2622]:
+              - generic "Promo Card" [ref=e2623]
+              - generic [ref=e2624]:
+                - button "Play" [ref=e2632] [cursor=pointer]:
+                  - generic [ref=e2633]: Play
+                - generic [ref=e2635]:
+                  - generic [ref=e2636]: Apple's latest products have been announced!
+                  - link "Learn more" [ref=e2638] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/tech/why-buy-iphone-18-series-from-jb-hi-fi
+            - generic [ref=e2640]:
+              - link "Promo Card" [ref=e2641] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/headphones-speakers-audio/apple-airpods?Apple%20AirPods%20model=AirPods%205th%20Gen
+              - generic [ref=e2642]:
+                - img "Airpod 5 Promocard" [ref=e2644]
+                - generic [ref=e2646]:
+                  - generic [ref=e2647]: Hear the world around you.
+                  - link "Shop now" [ref=e2649] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/headphones-speakers-audio/apple-airpods?Apple%20AirPods%20model=AirPods%205th%20Gen
+            - generic [ref=e2651]:
+              - link "Promo Card" [ref=e2652] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/mobile-phones/google-pixel-11-series
+              - generic [ref=e2653]:
+                - img "G250965 JBHIFI CGYK PreOrder Promo-Card 500x900px" [ref=e2655]
+                - generic [ref=e2656]:
+                  - img [ref=e2657]
+                  - generic [ref=e2664]:
+                    - generic [ref=e2665]: Check out what's new from Google!
+                    - link "Shop now" [ref=e2667] [cursor=pointer]:
+                      - /url: https://www.jbhifi.com.au/collections/mobile-phones/google-pixel-11-series
+            - generic [ref=e2669]:
+              - link "Promo Card" [ref=e2670] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/search?query=laifen%20hairdryers
+              - generic [ref=e2671]:
+                - img "jb-au-20260903-health-beauty-laifen-promo-card" [ref=e2673]
+                - generic [ref=e2675]:
+                  - generic [ref=e2676]: Professional drying for everyday use, everywhere.
+                  - link "Shop now" [ref=e2678] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/search?query=laifen%20hairdryers
+            - generic [ref=e2680]:
+              - link "Promo Card" [ref=e2681] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/computers-tablets/apple-mac-mini
+              - generic [ref=e2682]:
+                - img "jb-au-20260826-mac-mini-promocard (3)" [ref=e2684]
+                - generic [ref=e2686]:
+                  - generic [ref=e2687]: Mac mini. Little do-it-all.
+                  - link "Shop now" [ref=e2689] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/computers-tablets/apple-mac-mini
+            - generic [ref=e2691]:
+              - link "Promo Card" [ref=e2692] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/products/bose-quietcomfort-headphones-gen-2-black
+              - generic [ref=e2693]:
+                - img "promo-card-mob" [ref=e2695]
+                - generic [ref=e2697]:
+                  - generic [ref=e2698]: A refreshed signature look with same great sound!
+                  - link "Shop now" [ref=e2700] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/products/bose-quietcomfort-headphones-gen-2-black
+            - generic [ref=e2702]:
+              - link "Promo Card" [ref=e2703] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/mobile-phones/iphone-duo
+              - generic [ref=e2704]:
+                - img "iPhone Duo Promocard" [ref=e2706]
+                - generic [ref=e2708]:
+                  - generic [ref=e2709]: Coming soon.
+                  - link "Learn more" [ref=e2711] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/mobile-phones/iphone-duo
+            - generic [ref=e2713]:
+              - link "Promo Card" [ref=e2714] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/the-legend-of-zelda
+              - generic [ref=e2715]:
+                - img "image" [ref=e2717]
+                - generic [ref=e2719]:
+                  - generic [ref=e2720]: "Celebrate the Legend of Zelda: 40th Anniversary!"
+                  - link "Pre-order" [ref=e2722] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/the-legend-of-zelda
+            - generic [ref=e2724]:
+              - link "Promo Card" [ref=e2725] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/mobile-phones/iphone-18-series
+              - generic [ref=e2726]:
+                - img "image" [ref=e2728]
+                - generic [ref=e2730]:
+                  - generic [ref=e2731]: The ultimate Pro iPhone.
+                  - link "Shop now" [ref=e2733] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/mobile-phones/iphone-18-series
+            - generic [ref=e2735]:
+              - generic "Promo Card" [ref=e2736]
+              - generic [ref=e2737]:
+                - button "Play" [ref=e2745] [cursor=pointer]:
+                  - generic [ref=e2746]: Play
+                - generic [ref=e2747]:
+                  - img [ref=e2748]
+                  - generic [ref=e2754]:
+                    - generic [ref=e2755]: What makes this ultra-thin TV different?
+                    - link "Shop now" [ref=e2757] [cursor=pointer]:
+                      - /url: https://www.jbhifi.com.au/blogs/tech/lg-wallpaper-oled-w6-what-makes-this-ultra-thin-tv-different
+            - generic [ref=e2759]:
+              - link "Promo Card" [ref=e2760] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/health-fitness-wearables/apple-watch-ultra
+              - generic [ref=e2761]:
+                - img "Watch Ultra Promocard" [ref=e2763]
+                - generic [ref=e2765]:
+                  - generic [ref=e2766]: The ultimate sports and adventure watch.
+                  - link "Shop now" [ref=e2768] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/health-fitness-wearables/apple-watch-ultra
+            - generic [ref=e2770]:
+              - link "Promo Card" [ref=e2771] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/mobile-phones/samsung-galaxy-s26-fe
+              - generic [ref=e2772]:
+                - img "Frame 3" [ref=e2774]
+                - generic [ref=e2775]:
+                  - img [ref=e2776]
+                  - generic [ref=e2786]:
+                    - generic [ref=e2787]: Capture moments beautifully with Galaxy S26FE!
+                    - link "Shop now" [ref=e2789] [cursor=pointer]:
+                      - /url: https://www.jbhifi.com.au/collections/mobile-phones/samsung-galaxy-s26-fe
+            - generic [ref=e2791]:
+              - link "Promo Card" [ref=e2792] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/products/sennheiser-momentum-true-wireless-5-in-ear-headphones-graphite
+              - generic [ref=e2793]:
+                - img "Sennheiser MTW5 JB-Hifi Promo-Card" [ref=e2795]
+                - generic [ref=e2797]:
+                  - generic [ref=e2798]: Take a look at Sennheiser's latest launch!
+                  - link "Shop now" [ref=e2800] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/products/sennheiser-momentum-true-wireless-5-in-ear-headphones-graphite
+            - generic [ref=e2802]:
+              - link "Promo Card" [ref=e2803] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/headphones-speakers-audio/speakers?sortBy=published_at_desc&Brand=SONY
+              - generic [ref=e2804]:
+                - img "39568 PAS Launch Assets JBH Promo Card 500x900" [ref=e2806]
+                - generic [ref=e2807]:
+                  - img [ref=e2808]
+                  - generic [ref=e2810]:
+                    - generic [ref=e2811]: Ground-shaking sound built to power every party
+                    - link "View all" [ref=e2813] [cursor=pointer]:
+                      - /url: https://www.jbhifi.com.au/collections/headphones-speakers-audio/speakers?sortBy=published_at_desc&Brand=SONY
+            - generic [ref=e2815]:
+              - generic "Promo Card" [ref=e2816]
+              - generic [ref=e2817]:
+                - button "Play" [ref=e2825] [cursor=pointer]:
+                  - generic [ref=e2826]: Play
+                - generic [ref=e2828]:
+                  - generic [ref=e2829]: A playful new lineup of Pokémon Tonies is here!
+                  - link "Shop now" [ref=e2831] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/collectibles-merchandise/tonies?sortBy=published_at_desc
+            - generic [ref=e2833]:
+              - link "Promo Card" [ref=e2834] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/blogs/games/whoa-its-our-first-look-at-grand-theft-auto-6
+              - generic [ref=e2835]:
+                - img "jb-au-20260625-gta-new-at-jb" [ref=e2837]
+                - generic [ref=e2839]:
+                  - generic [ref=e2840]: Grand Theft Auto VI - Pre-order now!
+                  - link "Learn more" [ref=e2842] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/games/whoa-its-our-first-look-at-grand-theft-auto-6
+            - generic [ref=e2844]:
+              - link "Promo Card" [ref=e2845] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/health-fitness-wearables/apple-watch-series-12
+              - generic [ref=e2846]:
+                - img "Watch 12 Promocard" [ref=e2848]
+                - generic [ref=e2850]:
+                  - generic [ref=e2851]: A work of heart.
+                  - link "Shop now" [ref=e2853] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/health-fitness-wearables/apple-watch-series-12
+            - generic [ref=e2855]:
+              - generic "Promo Card" [ref=e2856]
+              - generic [ref=e2857]:
+                - button "Play" [ref=e2865] [cursor=pointer]:
+                  - generic [ref=e2866]: Play
+                - generic [ref=e2868]:
+                  - generic [ref=e2869]: Let's Unbox The Kodak Charmera Millennium!
+                  - link "Shop now" [ref=e2871] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/tech/lets-unbox-the-kodak-charmera-millenium
+            - generic [ref=e2873]:
+              - link "Promo Card" [ref=e2874] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/collections/mobile-phones/iphone-18-accessories?Brand=XTREM
+              - generic [ref=e2875]:
+                - img "New at JB Promo Card Xtrem Inno" [ref=e2877]
+                - generic [ref=e2879]:
+                  - generic [ref=e2880]: Battery-less E-ink Customisable Case for iPhone 18
+                  - link "Shop now" [ref=e2882] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/collections/mobile-phones/iphone-18-accessories?Brand=XTREM
+          - generic [ref=e2907]:
+            - heading "Latest News & Reviews" [level=3] [ref=e2910]
+            - link "View News & Reviews" [ref=e2911] [cursor=pointer]:
+              - /url: /blogs/news-and-reviews
+              - text: View News & Reviews
+              - img [ref=e2912]
+            - generic [ref=e2915]:
+              - generic [ref=e2919]:
+                - button "Trending" [ref=e2922] [cursor=pointer]
+                - button "Tech" [ref=e2925] [cursor=pointer]
+                - button "Guides & Tips" [ref=e2928] [cursor=pointer]
+                - button "Music" [ref=e2931] [cursor=pointer]
+                - button "Games" [ref=e2934] [cursor=pointer]
+                - button "Movies & TV" [ref=e2937] [cursor=pointer]
+                - button "Competitions" [ref=e2940] [cursor=pointer]
+              - generic [ref=e2944]:
+                - link "hero-image2 latest-tech-sept-2026 The latest must-have tech out in September 2026" [ref=e2945] [cursor=pointer]:
+                  - /url: /blogs/tech/the-latest-must-have-tech-out-in-september-2026
+                  - img "hero-image2 latest-tech-sept-2026" [ref=e2947]
+                  - strong [ref=e2950]: The latest must-have tech out in September 2026
+                - link "hero-image footy-finals-tv-guide What’s the best TV for watching the footy finals?" [ref=e2951] [cursor=pointer]:
+                  - /url: /blogs/tech/whats-the-best-tv-for-watching-the-footy-finals
+                  - img "hero-image footy-finals-tv-guide" [ref=e2953]
+                  - strong [ref=e2956]: What’s the best TV for watching the footy finals?
+                - link "HERO-IMAGE KitchenAid-Artisan-Plus (1) The KitchenAid Artisan Plus Stand Mixer lights up your baking prep" [ref=e2957] [cursor=pointer]:
+                  - /url: /blogs/tech/the-kitchenaid-artisan-plus-stand-mixer-lights-up-your-baking-prep
+                  - img "HERO-IMAGE KitchenAid-Artisan-Plus (1)" [ref=e2959]
+                  - strong [ref=e2962]: The KitchenAid Artisan Plus Stand Mixer lights up your baking prep
+      - generic [ref=e2966]:
+        - heading "Check out the latest tech!" [level=2] [ref=e2970]
+        - generic [ref=e2974]:
+          - link "View all" [ref=e2978] [cursor=pointer]:
+            - /url: https://www.jbhifi.com.au/collections/new-at-jb
+            - text: View all
+            - img [ref=e2979]
+          - img [ref=e3158] [cursor=pointer]
+      - generic [ref=e3164]:
+        - heading "At JB, we're more than just products" [level=3] [ref=e3165]
+        - generic [ref=e3166]:
+          - generic [ref=e3168]:
+            - link "Installations" [ref=e3170] [cursor=pointer]:
+              - /url: /pages/installations
+              - img [ref=e3171]
+              - paragraph [ref=e3174]: Installations
+            - link "Trade-in" [ref=e3176] [cursor=pointer]:
+              - /url: /pages/jbtradein
+              - img [ref=e3177]
+              - paragraph [ref=e3180]: Trade-in
+            - link "Extra Care warranties" [ref=e3182] [cursor=pointer]:
+              - /url: /pages/extracare
+              - img [ref=e3183]
+              - paragraph [ref=e3185]: Extra Care warranties
+            - link "JB Hi-Fi Extras" [ref=e3187] [cursor=pointer]:
+              - /url: /pages/extras
+              - img [ref=e3188]
+              - paragraph [ref=e3190]: JB Hi-Fi Extras
+            - link "Pre-Paid SIM" [ref=e3192] [cursor=pointer]:
+              - /url: /pages/pre-paid-sim
+              - img [ref=e3193]
+              - paragraph [ref=e3195]: Pre-Paid SIM
+            - link "Upfront mobile plans" [ref=e3197] [cursor=pointer]:
+              - /url: /pages/upfront-mobile-plans
+              - img [ref=e3198]
+              - paragraph [ref=e3201]: Upfront mobile plans
+            - link "Mobile broadband plans" [ref=e3203] [cursor=pointer]:
+              - /url: /pages/mobile-broadband-plans
+              - img [ref=e3204]
+              - paragraph [ref=e3209]: Mobile broadband plans
+            - link "BYOD schools program" [ref=e3211] [cursor=pointer]:
+              - /url: https://www.jbeducation.com.au/byod/
+              - img [ref=e3212]
+              - paragraph [ref=e3214]: BYOD schools program
+          - img [ref=e3218] [cursor=pointer]
+          - img [ref=e3221] [cursor=pointer]
+      - generic [ref=e3225]:
+        - heading "All the best brands" [level=3] [ref=e3227]
+        - link "View all brands" [ref=e3228] [cursor=pointer]:
+          - /url: /pages/brands
+          - text: View all brands
+          - img [ref=e3229]
+        - generic [ref=e3232]:
+          - link "Brand Card Apple" [ref=e3233] [cursor=pointer]:
+            - /url: /pages/apple
+            - img "Brand Card Apple" [ref=e3234]
+          - link "Brand Card Bose" [ref=e3235] [cursor=pointer]:
+            - /url: /pages/bose
+            - img "Brand Card Bose" [ref=e3236]
+          - link "Brand Card Breville" [ref=e3237] [cursor=pointer]:
+            - /url: /pages/breville
+            - img "Brand Card Breville" [ref=e3238]
+          - link "Brand Card DJI" [ref=e3239] [cursor=pointer]:
+            - /url: /pages/dji
+            - img "Brand Card DJI" [ref=e3240]
+          - link "Brand Card Dyson" [ref=e3241] [cursor=pointer]:
+            - /url: /pages/dyson
+            - img "Brand Card Dyson" [ref=e3242]
+          - link "Brand Card Fisher & Paykel" [ref=e3243] [cursor=pointer]:
+            - /url: /collections/home-appliances/fisher-paykel-appliances
+            - img "Brand Card Fisher & Paykel" [ref=e3244]
+          - link "Hisense Logo (1)" [ref=e3245] [cursor=pointer]:
+            - /url: /pages/hisense
+            - img "Hisense Logo (1)" [ref=e3246]
+          - link "Brand Card Google" [ref=e3247] [cursor=pointer]:
+            - /url: /pages/google
+            - img "Brand Card Google" [ref=e3248]
+          - link "Brand Card HP" [ref=e3249] [cursor=pointer]:
+            - /url: https://www.jbhifi.com.au/pages/hp
+            - img "Brand Card HP" [ref=e3250]
+          - link "Brand Card LG" [ref=e3251] [cursor=pointer]:
+            - /url: /pages/lg
+            - img "Brand Card LG" [ref=e3252]
+          - link "Brand Card Microsoft" [ref=e3253] [cursor=pointer]:
+            - /url: /pages/microsoft
+            - img "Brand Card Microsoft" [ref=e3254]
+          - link "Brand Card Nesspresso" [ref=e3255] [cursor=pointer]:
+            - /url: /collections/home-appliances/nespresso-coffee-machines
+            - img "Brand Card Nesspresso" [ref=e3256]
+          - link "Brand Card Nintendo" [ref=e3257] [cursor=pointer]:
+            - /url: /collections/games-consoles/nintendo
+            - img "Brand Card Nintendo" [ref=e3258]
+          - link "Brand Card Samsung" [ref=e3259] [cursor=pointer]:
+            - /url: /pages/samsung
+            - img "Brand Card Samsung" [ref=e3260]
+          - link "Brand Card Sony" [ref=e3261] [cursor=pointer]:
+            - /url: /pages/sony
+            - img "Brand Card Sony" [ref=e3262]
+      - generic [ref=e3268]:
+        - generic [ref=e3269]:
+          - generic [ref=e3270]:
+            - heading "Sustainability at JB" [level=3] [ref=e3271]
+            - paragraph [ref=e3272]: We believe that good business is about doing the right thing and we strive to have a positive impact on the community and the environment where our team and customers live, work and play.
+          - generic [ref=e3277]:
+            - link "tile-sustainability" [ref=e3279] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/pages/sustainability
+              - img "tile-sustainability" [ref=e3280]
+            - link "tile-helping-hands" [ref=e3282] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/pages/helping-hands
+              - img "tile-helping-hands" [ref=e3283]
+            - link "tile-waste-reduction" [ref=e3285] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/pages/e-waste-recycling
+              - img "tile-waste-reduction" [ref=e3286]
+            - link "tile-climate-action" [ref=e3288] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/pages/climate-action
+              - img "tile-climate-action" [ref=e3289]
+            - link "tile-ethical-sourcing" [ref=e3291] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/pages/ethical-sourcing
+              - img "tile-ethical-sourcing" [ref=e3292]
+            - link "tile-carbon-neutral-partnership" [ref=e3294] [cursor=pointer]:
+              - /url: https://www.jbhifi.com.au/pages/carbon-neutral
+              - img "tile-carbon-neutral-partnership" [ref=e3295]
+        - generic [ref=e3297]:
+          - img "st263-LatestIssueCovers" [ref=e3299]
+          - generic [ref=e3300]:
+            - heading "Check out the latest STACK mag!" [level=2] [ref=e3301]
+            - paragraph [ref=e3302]: Games sees Marvel’s Wolverine hit big, alongside The Blood of Dawnwalker and more. In tech, Pokémon comes to Toniebox 2, in movies it’s blockbuster time with Disclosure Day and Supergirl, and in music we’ve new tunes from Beabadoobee, Ecca Vandal and more!
+            - link "Read the STACK mag" [ref=e3304] [cursor=pointer]:
+              - /url: https://stack.cld.bz/latest-mag
+              - generic [ref=e3305]: Read the STACK mag
+      - generic [ref=e3308]:
+        - paragraph [ref=e3309]: ^Discounts apply to previous ticketed / advertised price prior to the discount offer. As we negotiate, products will likely have been sold below ticketed / advertised price prior to the discount offer. Prices may differ at airport stores.
+        - paragraph
+    - contentinfo [ref=e3311]:
+      - generic [ref=e3313]:
+        - generic [ref=e3316]:
+          - generic [ref=e3317]:
+            - img [ref=e3318]
+            - generic [ref=e3320]: Australia's largest home entertainment retailer.
+            - generic [ref=e3321]:
+              - link "Facebook" [ref=e3322] [cursor=pointer]:
+                - /url: https://www.facebook.com/JBHiFi
+                - img "Facebook" [ref=e3323]
+              - link "Instagram" [ref=e3324] [cursor=pointer]:
+                - /url: https://www.instagram.com/jbhifi/
+                - img "Instagram" [ref=e3325]
+              - link "TikTok" [ref=e3326] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@jbhifi
+                - img "TikTok" [ref=e3327]
+              - link "YouTube" [ref=e3328] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/JBHiFiOfficial
+                - img "YouTube" [ref=e3329]
+              - link "X" [ref=e3330] [cursor=pointer]:
+                - /url: https://x.com/JBHiFi
+                - img "X" [ref=e3331]
+          - generic [ref=e3332]:
+            - generic [ref=e3333]:
+              - heading "Help & Support" [level=6] [ref=e3334]
+              - list [ref=e3335]:
+                - listitem [ref=e3336]:
+                  - link "Help & Support" [ref=e3337] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support
+                - listitem [ref=e3338]:
+                  - link "Track my order" [ref=e3339] [cursor=pointer]:
+                    - /url: /pages/track-my-order
+                - listitem [ref=e3340]:
+                  - link "Faulty goods returns" [ref=e3341] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support/how-do-i-return-faulty-goods
+                - listitem [ref=e3342]:
+                  - link "Refunds & Warranties guide" [ref=e3343] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support/refunds-and-warranties-guide
+                - listitem [ref=e3344]:
+                  - link "Advertised offers" [ref=e3345] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/advertised-offers
+                - listitem [ref=e3346]:
+                  - link "Advertising corrections" [ref=e3347] [cursor=pointer]:
+                    - /url: https://jbhaucataloguemngsaprod.blob.core.windows.net/corrections/au-cataloguecorrections.pdf
+                - listitem [ref=e3348]:
+                  - link "Scam alerts" [ref=e3349] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support/scam-alerts
+                - listitem [ref=e3350]:
+                  - link "Product recalls" [ref=e3351] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support/product-recalls
+            - generic [ref=e3352]:
+              - heading "News & Reviews" [level=6] [ref=e3353]
+              - list [ref=e3354]:
+                - listitem [ref=e3355]:
+                  - link "News & Reviews" [ref=e3356] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/news-and-reviews
+                - listitem [ref=e3357]:
+                  - link "Latest Tech" [ref=e3358] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/tech
+                - listitem [ref=e3359]:
+                  - link "Competitions" [ref=e3360] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/competitions
+                - listitem [ref=e3361]:
+                  - link "Guides & Tips" [ref=e3362] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/buying-guides
+                - listitem [ref=e3363]:
+                  - link "Reviews" [ref=e3364] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/reviews
+                - listitem [ref=e3365]:
+                  - link "Latest STACK magazine" [ref=e3366] [cursor=pointer]:
+                    - /url: https://stack.cld.bz/latest-mag
+                - listitem [ref=e3367]:
+                  - link "Previous STACK editions" [ref=e3368] [cursor=pointer]:
+                    - /url: https://stack.cld.bz/
+            - generic [ref=e3369]:
+              - heading "Company" [level=6] [ref=e3370]
+              - list [ref=e3371]:
+                - listitem [ref=e3372]:
+                  - link "About us" [ref=e3373] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/about-us
+                - listitem [ref=e3374]:
+                  - link "Careers" [ref=e3375] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/jobs
+                - listitem [ref=e3376]:
+                  - link "Sustainability" [ref=e3377] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/sustainability
+                - listitem [ref=e3378]:
+                  - link "Helping Hands" [ref=e3379] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/helping-hands
+                - listitem [ref=e3380]:
+                  - link "Investor information" [ref=e3381] [cursor=pointer]:
+                    - /url: https://investors.jbhifi.com.au/
+                - listitem [ref=e3382]:
+                  - link "BYOD Portal" [ref=e3383] [cursor=pointer]:
+                    - /url: https://byod.jbhifi.education/
+                - listitem [ref=e3384]:
+                  - link "JB Hi-Fi Business" [ref=e3385] [cursor=pointer]:
+                    - /url: https://www.jbhifi.business/
+                - listitem [ref=e3386]:
+                  - link "JB Hi-Fi Marketplace" [ref=e3387] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/marketplace
+                - listitem [ref=e3388]:
+                  - link "Join JB Perks" [ref=e3389] [cursor=pointer]:
+                    - /url: /pages/perks?source=Footer
+          - list [ref=e3391]:
+            - listitem [ref=e3392]:
+              - img "JB Hi-Fi Gift Card" [ref=e3393]
+            - listitem [ref=e3394]:
+              - img "Mastercard" [ref=e3395]
+            - listitem [ref=e3396]:
+              - img "Visa" [ref=e3397]
+            - listitem [ref=e3398]:
+              - img "PayPal" [ref=e3399]
+            - listitem [ref=e3400]:
+              - img "Apple Pay" [ref=e3401]
+            - listitem [ref=e3402]:
+              - img "American Express" [ref=e3403]
+            - listitem [ref=e3404]:
+              - img "AfterPay" [ref=e3405]
+            - listitem [ref=e3406]:
+              - img "Zip Pay" [ref=e3407]
+            - listitem [ref=e3408]:
+              - img "Latitude interest free" [ref=e3409]
+            - listitem [ref=e3410]:
+              - img "UnionPay" [ref=e3411]
+        - generic [ref=e3414]:
+          - generic [ref=e3416]:
+            - text: ©2026
+            - link "JB Hi-Fi" [ref=e3417] [cursor=pointer]:
+              - /url: /
+            - text: All rights reserved
+          - list [ref=e3419]:
+            - listitem [ref=e3420]:
+              - link "Consumer guarantees" [ref=e3421] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/help-and-support/consumer-guarantees
+            - listitem [ref=e3422]:
+              - link "Privacy policy" [ref=e3423] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/help-and-support/privacy-policy
+            - listitem [ref=e3424]:
+              - link "Terms of use" [ref=e3425] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/help-and-support/terms-of-use
+            - listitem [ref=e3426]:
+              - link "Terms of sale" [ref=e3427] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/help-and-support/terms-of-sale
+  - button "Chat" [ref=e3429] [cursor=pointer]:
+    - img "Live chat icon, click to open the live chat pane." [ref=e3430]
+```
