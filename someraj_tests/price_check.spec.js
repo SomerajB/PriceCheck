@@ -27,7 +27,7 @@ test('check price change for iphone 17 Pro in Officeworks', async ({ request }) 
 
   // 2. Parse the response body as JSON
   const responseBody = await response.json();
-  expect(responseBody.IP17PR25OG.price).toEqual(199700)
+  expect(responseBody.IP17PR25OG.price).toEqual(169900)
   
   
 });
