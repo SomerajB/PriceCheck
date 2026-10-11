@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-test.skip('check price change for iphone 17 Pro in JB-HiFi', async ({ page }) => {
+test('check price change for iphone 17 Pro in JB-HiFi', async ({ page }) => {
   await page.goto('https://www.jbhifi.com.au/products/apple-iphone-17-pro-256gb-cosmic-orange');
   const present_price = await page.locator('#pdp-price-cta span').last().textContent()
   expect (Number(present_price)).toEqual(1799)
@@ -73,7 +73,7 @@ test('Check passport status', async ({ request }) => {
 test('check for new ghost story', async ({ page }) => {
   await page.goto('https://www.ebanglalibrary.com/genres/%e0%a6%ad%e0%a7%8c%e0%a6%a4%e0%a6%bf%e0%a6%95/?_sorting=newfirst');
   const latestStory = await page.locator('article>div>h2').first().textContent()
-  expect (latestStory).toEqual('আতঙ্কের নেপথ্যে – পল্লবী সেনগুপ্ত')
+  expect (latestStory).toEqual('গা-ছমছমে ভৌতিক অলৌকিক – হিমাদ্রিকিশোর দাশগুপ্ত')
 });
 
 
