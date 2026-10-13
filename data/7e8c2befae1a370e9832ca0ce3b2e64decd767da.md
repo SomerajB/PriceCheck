@@ -1,0 +1,657 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link [ref=e2] [cursor=pointer]:
+    - /url: "#"
+    - text: ___
+  - generic [ref=e5]:
+    - banner [ref=e7]:
+      - generic [ref=e9]:
+        - generic [ref=e15] [cursor=pointer]:
+          - paragraph [ref=e18]:
+            - text: Seen it cheaper? Ask for a JB Deal!
+            - link "Live chat" [ref=e19]:
+              - /url: /
+            - text: or call
+            - link "13 52 44" [ref=e20]:
+              - /url: tel:+61135244
+            - text: .
+          - button "Close" [ref=e21]:
+            - img [ref=e22]
+        - generic [ref=e24]:
+          - link "Always Cheap Prices" [ref=e26] [cursor=pointer]:
+            - /url: /
+            - img [ref=e27]
+            - generic [ref=e29]: Always Cheap Prices
+          - generic [ref=e30]:
+            - generic [ref=e33]:
+              - img [ref=e34]
+              - textbox "Search products, brands, and more…" [ref=e37]
+            - generic [ref=e38]:
+              - button "Ask JB" [ref=e40] [cursor=pointer]:
+                - img [ref=e41]
+              - tooltip "Say hello to ask JB! Your new shopping assistant is here to help you find what you need." [ref=e43]:
+                - generic [ref=e46]:
+                  - generic [ref=e47]: Say hello to ask JB!
+                  - generic [ref=e48]: Your new shopping assistant is here to help you find what you need.
+          - generic [ref=e49]:
+            - button "Track order" [ref=e51] [cursor=pointer]:
+              - img [ref=e52]
+              - generic [ref=e54]: Track order
+            - button "Stores" [ref=e56] [cursor=pointer]:
+              - img [ref=e57]
+              - generic [ref=e61]: Stores
+            - button "Log in" [ref=e63] [cursor=pointer]:
+              - img [ref=e64]
+              - generic [ref=e66]: Log in
+            - button "Cart" [ref=e68] [cursor=pointer]:
+              - img [ref=e69]
+              - generic [ref=e72]: Cart
+        - navigation [ref=e74]:
+          - list [ref=e76]:
+            - listitem [ref=e77]:
+              - link "New" [ref=e78] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/blogs/new-at-jb
+            - listitem [ref=e79]:
+              - button "Products" [ref=e80] [cursor=pointer]
+            - listitem [ref=e81]:
+              - button "Brands" [ref=e82] [cursor=pointer]
+            - listitem [ref=e83]:
+              - button "Deals & Catalogues" [ref=e84] [cursor=pointer]
+            - listitem [ref=e85]:
+              - button "Clearance" [ref=e86] [cursor=pointer]
+            - listitem [ref=e87]:
+              - button "Services" [ref=e88] [cursor=pointer]
+            - listitem [ref=e89]:
+              - button "Gift Cards" [ref=e90] [cursor=pointer]
+            - listitem [ref=e91]:
+              - button "Join JB Perks" [ref=e92] [cursor=pointer]
+            - listitem [ref=e93]:
+              - button "News & Reviews" [ref=e94] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e103]:
+        - generic [ref=e105]:
+          - link "Home" [ref=e106] [cursor=pointer]:
+            - /url: /
+          - img [ref=e107]
+        - generic [ref=e110]:
+          - link "Mobile Phones" [ref=e111] [cursor=pointer]:
+            - /url: /collections/mobile-phones
+          - img [ref=e112]
+        - generic [ref=e115]:
+          - link "Apple iPhone" [ref=e116] [cursor=pointer]:
+            - /url: /collections/mobile-phones/iphones
+          - img [ref=e117]
+        - paragraph [ref=e121]: Apple iPhone 17 Pro 256GB (Deep Blue)
+      - main [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e125]:
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - heading "Apple iPhone 17 Pro 256GB (Deep Blue)" [level=1] [ref=e130]
+                - generic [ref=e131]:
+                  - generic [ref=e134] [cursor=pointer]:
+                    - generic [ref=e135]:
+                      - button "average rating value is 4.1 of 5." [ref=e136]:
+                        - generic [ref=e137]:
+                          - img [ref=e138]
+                          - img [ref=e140]
+                          - img [ref=e142]
+                          - img [ref=e144]
+                          - img [ref=e146]
+                        - generic [ref=e148]: "4.1"
+                      - button "Read 25 reviews. This action will scroll down to read all reviews" [ref=e149]:
+                        - generic [ref=e151]: (25)
+                    - button "Write a review. This action will open a modal dialog." [ref=e155]: Write a review
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "MODEL: MG8J4X/A"
+                    - generic [ref=e158]: "SKU: 816112"
+                - generic [ref=e159]: "PLU: 195950627626"
+              - generic [ref=e161]:
+                - generic [ref=e164]: Red Hot Deal
+                - generic [ref=e167]:
+                  - generic [ref=e168]: $
+                  - generic [ref=e169]: "1699"
+              - generic [ref=e170]:
+                - link [ref=e172] [cursor=pointer]:
+                  - /url: https://www.jbhifi.com.au/pages/help-and-support/afterpay
+                  - img [ref=e173]
+                - link [ref=e185] [cursor=pointer]:
+                  - /url: https://www.jbhifi.com.au/pages/help-and-support/zip
+                  - img [ref=e186]
+                - link [ref=e192] [cursor=pointer]:
+                  - /url: https://www.jbhifi.com.au/pages/help-and-support/paypal-pay-in-4
+                  - img [ref=e193]
+                - link [ref=e197] [cursor=pointer]:
+                  - /url: https://www.jbhifi.com.au/pages/interest-free-finance
+                  - img [ref=e198]
+              - generic [ref=e202]:
+                - img [ref=e204]:
+                  - img [ref=e205]
+                - generic [ref=e215]:
+                  - link "Log in" [ref=e216] [cursor=pointer]:
+                    - /url: https://auth.jbhifi.com.au/account/login?pageTheme=perks&referrer=https%3A%2F%2Fwww.jbhifi.com.au%2Fproducts%2Fapple-iphone-17-pro-256gb-deep-blue&returnUrl=%2Fpages%2Fperks%3Fredirect%3Dtrue%26returnUrlOverride%3Dhttps%253A%252F%252Fwww.jbhifi.com.au%252Fproducts%252Fapple-iphone-17-pro-256gb-deep-blue
+                  - text: to see if you have coupons.
+              - generic [ref=e218]:
+                - generic [ref=e219]: Colour
+                - generic [ref=e223]:
+                  - link "Deep Blue" [ref=e224]:
+                    - /url: /products/apple-iphone-17-pro-256gb-deep-blue
+                    - img "Deep Blue" [ref=e225]
+                  - link "Cosmic Orange" [ref=e226] [cursor=pointer]:
+                    - /url: /products/apple-iphone-17-pro-256gb-cosmic-orange
+                    - img "Cosmic Orange" [ref=e227]
+                - generic [ref=e228]: Deep Blue
+              - generic [ref=e229]:
+                - button "Add to cart Added!" [ref=e231] [cursor=pointer]:
+                  - generic [ref=e232]: Add to cart
+                  - generic [ref=e233]: Added!
+                - generic [ref=e234]:
+                  - button "Compare" [ref=e236] [cursor=pointer]:
+                    - img [ref=e237]
+                    - generic [ref=e239]: Compare
+                  - button "Wishlist" [ref=e242] [cursor=pointer]:
+                    - img [ref=e243]
+                    - generic [ref=e245]: Wishlist
+              - alert [ref=e248]:
+                - img [ref=e250]
+                - generic [ref=e252]:
+                  - paragraph [ref=e253]: Feature
+                  - paragraph [ref=e256]:
+                    - link "Compare iPhone models here" [ref=e257] [cursor=pointer]:
+                      - /url: https://www.jbhifi.com.au/pages/compare-iphone-models
+              - generic [ref=e260]:
+                - generic [ref=e261]: Seen it cheaper?
+                - generic [ref=e263]:
+                  - generic [ref=e264]:
+                    - text: Ask for a
+                    - heading "JB Deal!" [level=3] [ref=e265]
+                  - paragraph [ref=e266]: Instore | Online
+                - paragraph [ref=e269]: Excludes JB Hi-Fi Marketplace products
+                - generic [ref=e270]:
+                  - button "Live chat" [ref=e271] [cursor=pointer]:
+                    - img [ref=e273]
+                    - text: Live chat
+                  - button "Call 13 52 44" [ref=e275] [cursor=pointer]:
+                    - img [ref=e277]
+                    - text: Call 13 52 44
+                  - generic [ref=e279]: 10pm – 9am (UTC)
+              - generic [ref=e281]:
+                - text: Key features
+                - list [ref=e283]:
+                  - listitem [ref=e284]: Unibody design. For exceptional power
+                  - listitem [ref=e285]: Durable ceramic shield. Front and back
+                  - listitem [ref=e286]: The Ultimate Pro Camera System
+                  - listitem [ref=e287]: Built For Apple Intelligence
+              - button "Product overview" [ref=e291] [cursor=pointer]:
+                - img [ref=e292]
+                - generic [ref=e294]: Product overview
+              - generic [ref=e295]:
+                - heading "Availability" [level=4] [ref=e297]
+                - generic [ref=e298]:
+                  - generic [ref=e301]:
+                    - textbox "Enter postcode or suburb" [ref=e302]
+                    - generic: Enter postcode or suburb
+                  - button "Use my location" [ref=e304] [cursor=pointer]:
+                    - generic [ref=e305]: Use my location
+              - generic [ref=e306]:
+                - heading "Trade-in your old phone" [level=3] [ref=e307]:
+                  - img [ref=e308]
+                  - text: Trade-in your old phone
+                - paragraph [ref=e312]:
+                  - paragraph [ref=e313]:
+                    - text: Get an instant JB Gift Card to put towards your new phone.
+                    - link "How it works" [ref=e314] [cursor=pointer]:
+                      - /url: https://www.jbhifi.com.au/pages/tradein
+                - iframe [ref=e316]:
+                  - main "Trade-in estimate" [ref=f22e2]:
+                    - generic [ref=f22e3]:
+                      - generic [ref=f22e4]:
+                        - img
+                        - combobox "Search for your device" [ref=f22e5]
+                      - status [ref=f22e6]
+              - generic [ref=e318]:
+                - generic [ref=e319]:
+                  - img "headingLogo" [ref=e320]
+                  - heading "Get more from your device with JB Hi-Fi Extras" [level=3] [ref=e321]
+                - generic [ref=e322]:
+                  - generic [ref=e324] [cursor=pointer]:
+                    - checkbox [ref=e325]
+                    - img [ref=e327]
+                  - generic [ref=e329]:
+                    - button "Add 24 month plan $299.00" [ref=e330] [cursor=pointer]
+                    - list [ref=e331]:
+                      - listitem [ref=e332]: Replace your device's screen or swap your device and get a refurbished replacement for any reason at any time (service fees apply).
+                      - listitem [ref=e333]: AppleCare services at no additional cost.
+                    - button "More information" [ref=e334] [cursor=pointer]
+            - generic [ref=e335]:
+              - generic [ref=e336]:
+                - generic [ref=e337]:
+                  - generic [ref=e339]: TRADE IN YOUR OLD PHONE
+                  - button "Similar items" [ref=e340] [cursor=pointer]:
+                    - img [ref=e341]
+                    - generic [ref=e343]: Similar items
+                - generic [ref=e344]:
+                  - generic [ref=e346]:
+                    - link "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e347] [cursor=pointer]:
+                      - /url: ""
+                      - img "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e348]
+                    - link "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e349] [cursor=pointer]:
+                      - /url: ""
+                      - img "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e350]
+                    - link "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e351] [cursor=pointer]:
+                      - /url: ""
+                      - img "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e352]
+                    - link "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e353] [cursor=pointer]:
+                      - /url: ""
+                      - img "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e354]
+                    - link "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e355] [cursor=pointer]:
+                      - /url: ""
+                      - img "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e356]
+                    - link "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e357] [cursor=pointer]:
+                      - /url: ""
+                      - img "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e358]
+                    - link "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e359] [cursor=pointer]:
+                      - /url: ""
+                      - img "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e360]
+                    - link "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e361] [cursor=pointer]:
+                      - /url: ""
+                      - img "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e362]
+                  - img "Apple iPhone 17 Pro 256GB (Deep Blue)" [ref=e365] [cursor=pointer]
+                - generic [ref=e367]:
+                  - generic [ref=e368]: DON'T MISS OUT ON THESE!
+                  - generic [ref=e369]:
+                    - generic [ref=e370]:
+                      - generic [ref=e371]:
+                        - generic [ref=e375] [cursor=pointer]:
+                          - img "Trade in your old phone for a JB Hi-Fi Gift Card#" [ref=e377]
+                          - generic [ref=e378]:
+                            - generic [ref=e379]: Trade in your old phone for a JB Hi-Fi Gift Card#
+                            - generic [ref=e380]:
+                              - generic [ref=e381]:
+                                - paragraph [ref=e382]: "- Get a quick quote online"
+                                - paragraph [ref=e383]: "- Get your e-Gift Card immediately"
+                                - paragraph [ref=e384]: "- Upgrade to your new device faster"
+                              - button "Get a quote now" [ref=e387]:
+                                - img [ref=e388]
+                                - generic [ref=e390]: Get a quote now
+                              - generic [ref=e392]:
+                                - text: "#The JB Hi-Fi Trade-in program is operated by Assurant Services Australia Pty Limited ABN 18 613 632 367, Second Hand Dealer 2PS20872. Participant must be AU resident aged 18+ with trade-in device purchased in AU. Assurant is not required to make an offer on your device. The JB Hi-Fi eGift Card given in exchange for a trade-in is subject to"
+                                - link "Terms and Conditions" [ref=e393]:
+                                  - /url: https://support.jbhifi.com.au/hc/en-au/articles/360052939334-Gift-Card-Terms-Conditions
+                                - text: . Pre-authorisation will be taken from participant’s payment card. If traded in device is not received within 7 days after your trade-in, Assurant may debit the trade-in value from your payment card.
+                                - link "Assurant Terms and Conditions apply" [ref=e394]:
+                                  - /url: https://jbhifi-tradein.assurant.com.au/terms-and-conditions
+                                - text: .
+                        - generic [ref=e398] [cursor=pointer]:
+                          - img "Get a $900 JB Gift Card◊ when you switch your number instore to JB HI-FI Mobile on a $99 Plan over 24 months‡" [ref=e400]
+                          - generic [ref=e401]:
+                            - generic [ref=e402]: Get a $900 JB Gift Card◊ when you switch your number instore to JB HI-FI Mobile on a $99 Plan over 24 months‡
+                            - generic [ref=e403]:
+                              - generic [ref=e404]:
+                                - paragraph [ref=e405]: "- Unlimited talk & text to standard Australian numbers"
+                                - paragraph [ref=e406]: "- 300GB data for use in Australia"
+                                - paragraph [ref=e407]: "- Minimum Plan Cost $2376 over 24 months."
+                                - paragraph [ref=e408]: "- Instore only"
+                              - button "View full terms and conditions" [ref=e411]:
+                                - img [ref=e412]
+                                - generic [ref=e414]: View full terms and conditions
+                              - generic [ref=e415]:
+                                - generic [ref=e416]:
+                                  - text: ◊Offer only available for new mobile services and eligible port-in mobile services (being an existing mobile service transferred from another provider, excluding any service that has been active on a Telstra, JB Hi-Fi, The Good Guys, or Boost plan at any time in the 30 days before the transfer). The JB Hi-Fi Gift Card (referred to as the “JB Hi-Fi Voucher” in the Telstra Terms and Conditions available at
+                                  - link "www.telstra.com.au/jbhifi-mobile-terms" [ref=e417]:
+                                    - /url: https://www.telstra.com.au/content/dam/tcom/personal/consumer-advice/pdf/consumer/jb-hi-fi-standard-terms-upfront-mobile-service-terms.pdf
+                                  - text: ) will be available to you in store after connection approval by Telstra. The $900 JB Hi-Fi Gift Card replaces the value of the Voucher stated in the Critical Information Summary. This plan requires you to pay 24 monthly instalments. If you cancel or move to a lower cost/different plan before you have paid 24 monthly instalments in full, then you must pay a Voucher Repayment Fee to Telstra pro-rated against the remaining instalments (or part instalments). This offer is not available in conjunction with any other JB Hi-Fi Mobile or Broadband offer and is limited to 3 connections per customer. Gift Card subject to Terms and Conditions available at
+                                  - link "www.jbhifi.com.au/giftcardterms" [ref=e418]:
+                                    - /url: https://www.jbhifi.com.au/pages/help-and-support/gift-card-terms-and-conditions
+                                  - text: . ‡Speeds may vary due to various factors such as location, hardware and network congestion. If you exceed your data allowance, your speed will be capped at 1.5Mbps. Speed is slowed further in busy periods. For full Terms & Conditions and Critical Information Summary visit
+                                  - link "www.jbhifi.com.au/mobile-plans" [ref=e419]:
+                                    - /url: https://www.jbhifi.com.au/pages/upfront-mobile-plans
+                                  - text: . Available instore only.
+                                - generic [ref=e420]: Offer ends 14 Oct 2026
+                        - generic [ref=e424] [cursor=pointer]:
+                          - img "Buy an Eligible Apple or Beats product and get a bonus 6-month Apple Music subscription*. New subscribers only. Ends 5/9/2027." [ref=e426]
+                          - generic [ref=e427]:
+                            - generic [ref=e428]: Buy an Eligible Apple or Beats product and get a bonus 6-month Apple Music subscription*. New subscribers only. Ends 5/9/2027.
+                            - generic [ref=e430]:
+                              - generic [ref=e431]:
+                                - text: "*Offer valid for Eligible Apple or Beats purchases made by 5/9/2027. Eligible Apple products include any new iPhone, iPad, Apple TV, Apple Watch or Mac (capable of running the latest iOS, iPadOS, tvOS, watchOS or macOS), AirPods (2nd and 3rd generations), AirPods 4 and AirPods 5 (all models), AirPods Pro (all generations), AirPods Max, HomePod mini, and HomePod (all generations). Eligible Beats products include any new Beats earbuds (excluding Beats Flex wireless earbuds), Beats speakers and/or Beats headphone. Bonus subscription must be claimed within 90 days of device setup in the Apple Music app whilst signed into your Apple Account. Subscription automatically charged after expiration of bonus subscription period, billed on a recurring monthly basis, unless you cancel before bonus subscription period ends. Subscription fees currently $14.99/month. Subscription fees may change. One offer per eligible Apple Account. Offer cannot be combined with other free trial offers for Apple Music or Apple One. Apple Music T&Cs at"
+                                - link "https://www.apple.com/au/legal/internet-services/itunes/au/terms.html" [ref=e432]:
+                                  - /url: https://www.apple.com/au/legal/internet-services/itunes/au/terms.html
+                                - text: apply. Excludes refurbished product. For offer eligibility, other key terms and full T&Cs visit
+                                - link "jbhifi.com.au/pages/apple-music" [ref=e433]:
+                                  - /url: https://www.jbhifi.com.au/pages/apple-music
+                                - text: .
+                              - generic [ref=e434]: Offer ends 5 Sep 2027
+                      - generic [ref=e437]: 1 of 3
+                    - img [ref=e439] [cursor=pointer]
+                - generic [ref=e442]:
+                  - heading "Frequently bought together" [level=3] [ref=e443]
+                  - img [ref=e620] [cursor=pointer]
+              - generic [ref=e624]:
+                - generic [ref=e625]:
+                  - generic [ref=e626] [cursor=pointer]:
+                    - heading "Description" [level=2] [ref=e628]
+                    - img [ref=e630]
+                  - generic [ref=e632]:
+                    - generic [ref=e635]:
+                      - paragraph
+                      - iframe [ref=e637]:
+                        
+                      - paragraph
+                      - paragraph [ref=e638]: iPhone 17 Pro. The most powerful iPhone ever. Brilliant 6.3-inch display1, aluminium unibody design, A19 Pro chip, all 48MP rear cameras and breakthrough battery life.
+                      - paragraph [ref=e639]:
+                        - strong [ref=e640]: Key Features
+                      - paragraph [ref=e641]:
+                        - strong [ref=e642]: Unibody design. For exceptional power.
+                        - text: — Heat-forged aluminium unibody design for the most powerful iPhone ever made.
+                      - paragraph [ref=e643]:
+                        - strong [ref=e644]: Durable ceramic shield. Front and back.
+                        - text: — Ceramic Shield protects the back of iPhone 17 Pro Max, making it 4x more resistant to cracks.2 And the new Ceramic Shield 2 on the front has 3x better scratch resistance.3
+                      - paragraph [ref=e645]:
+                        - strong [ref=e646]: The Ultimate Pro Camera System
+                        - text: — With all 48MP rear cameras and 8x optical-quality zoom — the widest zoom range ever in an iPhone. It’s the equivalent of eight pro lenses in your pocket.
+                      - paragraph [ref=e647]:
+                        - strong [ref=e648]: 18MP Center Stage Front Camera
+                        - text: — Flexible ways to frame your shot. Smarter group selfies, Dual Capture video for simultaneous front and rear recording, and more.
+                      - paragraph [ref=e649]:
+                        - strong [ref=e650]: A19 Pro Chip. Vapour-cooled. Lightning-fast.
+                        - text: — A19 Pro is the most powerful iPhone chip yet, delivering up to 40 per cent better sustained performance.
+                      - paragraph [ref=e651]:
+                        - strong [ref=e652]: Breakthrough Battery Life
+                        - text: — The unibody design creates massive additional battery capacity, for up to 31 hours of video playback.4 Charge up to 50 per cent in 20 minutes.5
+                      - paragraph [ref=e653]:
+                        - strong [ref=e654]: IOS 26. New look. Even more magic
+                        - text: . — A fresh design with Liquid Glass. Beautiful, delightful and instantly familiar. With a more vibrant Lock Screen, customisable backgrounds and polls in Messages, Call Screening and more.6
+                      - paragraph [ref=e655]:
+                        - strong [ref=e656]: Built For Apple Intelligence
+                        - text: — Personal, private, powerful. Write, express yourself and get things done effortlessly.7
+                      - paragraph [ref=e657]:
+                        - strong [ref=e658]: Vital Safety Features
+                        - text: — If you don’t have mobile reception or Wi-Fi, iPhone can connect to a satellite so you can contact emergency services.8 And in a severe car crash, iPhone can call for help when you can’t.9
+                      - paragraph [ref=e659]:
+                        - strong [ref=e660]: Stronger connectivity. Superfast speeds.
+                        - text: — Stay connected at faster speeds with secure connections to Wi-Fi 710 5G networks11 and Bluetooth® 6, plus eSIM.12
+                      - paragraph [ref=e661]:
+                        - strong [ref=e662]: eSIM, flexible. Secure. Seamless.
+                        - text: — With eSIM, you enjoy greater flexibility, enhanced convenience, increased security and seamless connectivity, especially when travelling internationally.12
+                      - paragraph [ref=e663]:
+                        - strong [ref=e664]: Privacy
+                        - text: — A whole new level of privacy and security. Built in.
+                      - paragraph [ref=e665]:
+                        - strong [ref=e666]: In the Box
+                        - text: iPhone 17 Pro
+                        - text: USB-C Charge Cable (1 m)
+                      - paragraph [ref=e667]:
+                        - generic [ref=e668]:
+                          - strong [ref=e669]: Legal
+                          - text: 1 The display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.27 inches (iPhone 17, iPhone 17 Pro), 6.55 inches (iPhone Air) or 6.86 inches (iPhone 17 Pro Max) diagonally. Actual viewable area is less.
+                          - text: 2 Compared with the glass back of previous-generation iPhone.
+                          - text: 3 Compared with previous-generation iPhone.
+                          - text: 4 All battery claims depend on network configuration and many other factors; actual results will vary. Battery has limited recharge cycles and may eventually need to be replaced. Battery life and charge cycles vary by use and settings. See apple.com/au/batteries and apple.com/au/iphone/battery for more information.
+                          - text: 5 Testing conducted by Apple in July 2025 using preproduction iPhone 17, iPhone Air, iPhone 17 Pro and iPhone 17 Pro Max units and software, USB C Charge Cable with Apple 40W Dynamic Power Adapter with 60W Max (Model A3351) and Apple MagSafe Chargers (1-metre Model A3502 and 2-metre Model A3503) with Apple 30W USB-C Power Adapter (Model A2164) or Apple 40W Dynamic Power Adapter with 60W Max (Model A3351). Fast-charge testing conducted with drained iPhone units. Times measured from the appearance of the Apple logo as the unit started up. Charge time varies with adapter, settings, usage and environmental factors; actual results will vary.
+                          - text: 6 Some features may not be available for all countries or all areas.
+                          - text: 7 Apple Intelligence is available in beta. Some features may not be available in all regions or languages. For feature and language availability, and system requirements, see support.apple.com/121115.
+                          - text: 8 Satellite features are included for free for two years with the activation of any iPhone 14 or later model. Connection and response times vary based on location, site conditions and other factors. Some satellite features require a carrier plan. Satellite connectivity is provided by Globalstar and its affiliates. See support.apple.com/101573 for more information.
+                          - text: 9 iPhone 17, iPhone 17 Pro and iPhone Air can detect a severe car crash and call for help. Requires a mobile network connection or Wi-Fi calling.
+                          - text: 10 Wi‑Fi 7 available in countries and regions where supported.
+                          - text: 12 Data plan required. 5G is available in selected markets and through selected carriers. For details on 5G support, contact your carrier and see apple.com/au/iphone/cellular.
+                          - text: 12 Use of an eSIM requires a carrier that supports eSIM and a carrier plan. See your carrier for details. To learn more, visit apple.com/esim.
+                      - paragraph [ref=e670]:
+                        - generic [ref=e671]:
+                          - strong [ref=e672]: Technical specifications
+                          - text: Go to apple.com/au/iphone/compare for a complete set.
+                    - button "Read more" [ref=e674] [cursor=pointer]:
+                      - img [ref=e675]
+                      - generic [ref=e677]: Read more
+                - generic [ref=e678]:
+                  - generic [ref=e679] [cursor=pointer]:
+                    - generic [ref=e681]: Specs
+                    - img [ref=e683]
+                  - generic [ref=e685]:
+                    - generic [ref=e686]:
+                      - term [ref=e687]: Phone Operating System
+                      - definition [ref=e688]: iOS
+                    - generic [ref=e689]:
+                      - term [ref=e690]: Phone Type
+                      - definition [ref=e691]: iPhone 17 Pro
+                    - generic [ref=e692]:
+                      - term [ref=e693]: Phone series
+                      - definition [ref=e694]: Apple iPhone 17 Series
+                    - generic [ref=e695]:
+                      - term [ref=e696]: Network compatibility
+                      - definition [ref=e697]: 5G
+                    - generic [ref=e698]:
+                      - term [ref=e699]: SIM Type
+                      - definition [ref=e700]: Dual SIM (nano-SIM + eSIM)
+                    - generic [ref=e701]:
+                      - term [ref=e702]: Colour
+                      - definition [ref=e703]: Blue
+                    - generic [ref=e704]:
+                      - term [ref=e705]: AI features
+                      - definition [ref=e706]: Built for Apple Intelligence
+                    - generic [ref=e707]:
+                      - term [ref=e708]: Device screen size (inches)
+                      - definition [ref=e709]: "6.3"
+                    - generic [ref=e710]:
+                      - term [ref=e711]: Resolution (Pixels)
+                      - definition [ref=e712]: 2622 x 1206
+                    - generic [ref=e713]:
+                      - term [ref=e714]: Display type
+                      - definition [ref=e715]: Super Retina XDR OLED display up to 120Hz
+                    - generic [ref=e716]:
+                      - term [ref=e717]: Touchscreen
+                      - definition [ref=e718]: "Yes"
+                    - generic [ref=e719]:
+                      - term [ref=e720]: Internal storage
+                      - definition [ref=e721]: 256GB
+                    - generic [ref=e722]:
+                      - term [ref=e723]: Battery life
+                      - definition [ref=e724]: Video playback (streamed) up to 30 hours
+                    - generic [ref=e725]:
+                      - term [ref=e726]: Wireless Charging Type
+                      - definition [ref=e727]: MagSafe
+                    - generic [ref=e728]:
+                      - term [ref=e729]: Face unlock
+                      - definition [ref=e730]: "Yes"
+                    - generic [ref=e731]:
+                      - term [ref=e732]: Processor series
+                      - definition [ref=e733]: A19 Pro chip
+                    - generic [ref=e734]:
+                      - term [ref=e735]: Rear Cameras (MP)
+                      - definition [ref=e736]: 48MP + 48MP + 48MP
+                    - generic [ref=e737]:
+                      - term [ref=e738]: Front camera (MP)
+                      - definition [ref=e739]: 18MP
+                    - generic [ref=e740]:
+                      - term [ref=e741]: Built-in flash
+                      - definition [ref=e742]: "Yes"
+                    - generic [ref=e743]:
+                      - term [ref=e744]: Image stabilisation
+                      - definition [ref=e745]: "Yes"
+                    - generic [ref=e746]:
+                      - term [ref=e747]: Video recording
+                      - definition [ref=e748]: Ultra HD
+                    - generic [ref=e749]:
+                      - term [ref=e750]: Video Frames Per Second
+                      - definition [ref=e751]: 4K Dolby Vision video recording at 24 fps, 25 fps, 30 fps, 60 fps, 100 fps (Fusion Main), or 120 fps (Fusion Main)
+                    - generic [ref=e752]:
+                      - term [ref=e753]: Environmental protection
+                      - definition [ref=e754]: Dust resistant, Water resistant
+                    - generic [ref=e755]:
+                      - term [ref=e756]: IP rating
+                      - definition [ref=e757]: IP68
+                    - generic [ref=e758]:
+                      - term [ref=e759]: GPS
+                      - definition [ref=e760]: "Yes"
+                    - generic [ref=e761]:
+                      - term [ref=e762]: USB-C Ports
+                      - definition [ref=e763]: "1"
+                    - generic [ref=e764]:
+                      - term [ref=e765]: NFC
+                      - definition [ref=e766]: "Yes"
+                    - generic [ref=e767]:
+                      - term [ref=e768]: Wi-Fi
+                      - definition [ref=e769]: Wi-Fi 7 (802.11 be)
+                    - generic [ref=e770]:
+                      - term [ref=e771]: Bluetooth
+                      - definition [ref=e772]: v6.0
+                    - generic [ref=e773]:
+                      - term [ref=e774]: Manufacturer's warranty
+                      - definition [ref=e775]: 1 Year
+                - generic [ref=e777] [cursor=pointer]:
+                  - generic [ref=e779]: Reviews
+                  - img [ref=e781]
+          - generic [ref=e785]:
+            - generic [ref=e787]:
+              - heading "Recommended for you" [level=3] [ref=e788]
+              - img [ref=e965] [cursor=pointer]
+            - generic [ref=e968]:
+              - paragraph [ref=e969]: ^Discounts apply to previous ticketed / advertised price prior to the discount offer. As we negotiate, products will likely have been sold below ticketed / advertised price prior to the discount offer. Prices may differ at airport stores.
+              - paragraph
+    - contentinfo [ref=e971]:
+      - generic [ref=e973]:
+        - generic [ref=e976]:
+          - generic [ref=e977]:
+            - img [ref=e978]
+            - generic [ref=e980]: Australia's largest home entertainment retailer.
+            - generic [ref=e981]:
+              - link "Facebook" [ref=e982] [cursor=pointer]:
+                - /url: https://www.facebook.com/JBHiFi
+                - img "Facebook" [ref=e983]
+              - link "Instagram" [ref=e984] [cursor=pointer]:
+                - /url: https://www.instagram.com/jbhifi/
+                - img "Instagram" [ref=e985]
+              - link "TikTok" [ref=e986] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@jbhifi
+                - img "TikTok" [ref=e987]
+              - link "YouTube" [ref=e988] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/JBHiFiOfficial
+                - img "YouTube" [ref=e989]
+              - link "X" [ref=e990] [cursor=pointer]:
+                - /url: https://x.com/JBHiFi
+                - img "X" [ref=e991]
+          - generic [ref=e992]:
+            - generic [ref=e993]:
+              - heading "Help & Support" [level=6] [ref=e994]
+              - list [ref=e995]:
+                - listitem [ref=e996]:
+                  - link "Help & Support" [ref=e997] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support
+                - listitem [ref=e998]:
+                  - link "Track my order" [ref=e999] [cursor=pointer]:
+                    - /url: /pages/track-my-order
+                - listitem [ref=e1000]:
+                  - link "Faulty goods returns" [ref=e1001] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support/how-do-i-return-faulty-goods
+                - listitem [ref=e1002]:
+                  - link "Refunds & Warranties guide" [ref=e1003] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support/refunds-and-warranties-guide
+                - listitem [ref=e1004]:
+                  - link "Advertised offers" [ref=e1005] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/advertised-offers
+                - listitem [ref=e1006]:
+                  - link "Advertising corrections" [ref=e1007] [cursor=pointer]:
+                    - /url: https://jbhaucataloguemngsaprod.blob.core.windows.net/corrections/au-cataloguecorrections.pdf
+                - listitem [ref=e1008]:
+                  - link "Scam alerts" [ref=e1009] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support/scam-alerts
+                - listitem [ref=e1010]:
+                  - link "Product recalls" [ref=e1011] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/help-and-support/product-recalls
+            - generic [ref=e1012]:
+              - heading "News & Reviews" [level=6] [ref=e1013]
+              - list [ref=e1014]:
+                - listitem [ref=e1015]:
+                  - link "News & Reviews" [ref=e1016] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/news-and-reviews
+                - listitem [ref=e1017]:
+                  - link "Latest Tech" [ref=e1018] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/tech
+                - listitem [ref=e1019]:
+                  - link "Competitions" [ref=e1020] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/competitions
+                - listitem [ref=e1021]:
+                  - link "Guides & Tips" [ref=e1022] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/buying-guides
+                - listitem [ref=e1023]:
+                  - link "Reviews" [ref=e1024] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/blogs/reviews
+                - listitem [ref=e1025]:
+                  - link "Latest STACK magazine" [ref=e1026] [cursor=pointer]:
+                    - /url: https://stack.cld.bz/latest-mag
+                - listitem [ref=e1027]:
+                  - link "Previous STACK editions" [ref=e1028] [cursor=pointer]:
+                    - /url: https://stack.cld.bz/
+            - generic [ref=e1029]:
+              - heading "Company" [level=6] [ref=e1030]
+              - list [ref=e1031]:
+                - listitem [ref=e1032]:
+                  - link "About us" [ref=e1033] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/about-us
+                - listitem [ref=e1034]:
+                  - link "Careers" [ref=e1035] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/jobs
+                - listitem [ref=e1036]:
+                  - link "Sustainability" [ref=e1037] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/sustainability
+                - listitem [ref=e1038]:
+                  - link "Helping Hands" [ref=e1039] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/helping-hands
+                - listitem [ref=e1040]:
+                  - link "Investor information" [ref=e1041] [cursor=pointer]:
+                    - /url: https://investors.jbhifi.com.au/
+                - listitem [ref=e1042]:
+                  - link "BYOD Portal" [ref=e1043] [cursor=pointer]:
+                    - /url: https://byod.jbhifi.education/
+                - listitem [ref=e1044]:
+                  - link "JB Hi-Fi Business" [ref=e1045] [cursor=pointer]:
+                    - /url: https://www.jbhifi.business/
+                - listitem [ref=e1046]:
+                  - link "JB Hi-Fi Marketplace" [ref=e1047] [cursor=pointer]:
+                    - /url: https://www.jbhifi.com.au/pages/marketplace
+                - listitem [ref=e1048]:
+                  - link "Join JB Perks" [ref=e1049] [cursor=pointer]:
+                    - /url: /pages/perks?source=Footer
+          - list [ref=e1051]:
+            - listitem [ref=e1052]:
+              - img "JB Hi-Fi Gift Card" [ref=e1053]
+            - listitem [ref=e1054]:
+              - img "Mastercard" [ref=e1055]
+            - listitem [ref=e1056]:
+              - img "Visa" [ref=e1057]
+            - listitem [ref=e1058]:
+              - img "PayPal" [ref=e1059]
+            - listitem [ref=e1060]:
+              - img "Apple Pay" [ref=e1061]
+            - listitem [ref=e1062]:
+              - img "American Express" [ref=e1063]
+            - listitem [ref=e1064]:
+              - img "AfterPay" [ref=e1065]
+            - listitem [ref=e1066]:
+              - img "Zip Pay" [ref=e1067]
+            - listitem [ref=e1068]:
+              - img "Latitude interest free" [ref=e1069]
+            - listitem [ref=e1070]:
+              - img "UnionPay" [ref=e1071]
+        - generic [ref=e1074]:
+          - generic [ref=e1076]:
+            - text: ©2026
+            - link "JB Hi-Fi" [ref=e1077] [cursor=pointer]:
+              - /url: /
+            - text: All rights reserved
+          - list [ref=e1079]:
+            - listitem [ref=e1080]:
+              - link "Consumer guarantees" [ref=e1081] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/help-and-support/consumer-guarantees
+            - listitem [ref=e1082]:
+              - link "Privacy policy" [ref=e1083] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/help-and-support/privacy-policy
+            - listitem [ref=e1084]:
+              - link "Terms of use" [ref=e1085] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/help-and-support/terms-of-use
+            - listitem [ref=e1086]:
+              - link "Terms of sale" [ref=e1087] [cursor=pointer]:
+                - /url: https://www.jbhifi.com.au/pages/help-and-support/terms-of-sale
+```
