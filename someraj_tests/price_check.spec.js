@@ -4,7 +4,7 @@ const { test, expect } = require('@playwright/test');
 test('check price change for iphone 17 Pro in JB-HiFi', async ({ page }) => {
   await page.goto('https://www.jbhifi.com.au/products/apple-iphone-17-pro-256gb-deep-blue');
   const present_price = await page.locator('#pdp-price-cta span').last().textContent()
-  expect (Number(present_price)).toEqual(1799)
+  expect (Number(present_price)).toEqual(1699)
 });
 
 test('check price change for iphone 18 Pro in JB-HiFi', async ({ page }) => {
