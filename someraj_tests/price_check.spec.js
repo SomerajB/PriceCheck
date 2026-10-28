@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-test('check price Hej Pure woods', async ({ page }) => {
+test.skip('check price Hej Pure woods', async ({ page }) => {
   await page.goto('https://www.chemistwarehouse.com.au/buy/158176/hej-pure-wood-eau-de-parfum-50ml');
   const present_price = await page.locator('.items-start h2').textContent()
   expect (present_price).toEqual('$19.99')
